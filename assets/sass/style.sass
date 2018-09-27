@@ -1,8 +1,10 @@
 $navColor: #05afa6
-$navColor-brigh: #1bbbb3
+$hero: #1bbbb3
+$hero: #1bbbb3
 $Red: #d71440
 $black: #000000
-$grey: #555555
+$paragraphGrey: #555555
+$aboutGrey: #eaeef1
 
 .nav
 	background-color: $navColor
@@ -30,18 +32,24 @@ a
 	font-family: Gotham
 	font-weight: 300
 	font-size: 14px
+	font-size: 15px
 	&:hover
 		color: #ffffff
 		text-decoration: none
 			
-
 	
 h1
 	font-family: Gotham
 	font-weight: 300
 	font-size: 48px
+	line-height: 58px
 	color: #ffffff
-	
+
+h2		
+	font-family: Gotham
+	font-weight: bold
+	font-size: 36px
+	color: $black
 
 h3
 	font-family: Gotham
@@ -53,7 +61,8 @@ p
 	font-family: Gotham book
 	font-weight: bold
 	font-size: 14px
-	color: $grey
+	line-height: 30px
+	color: $paragraphGrey
 	
 
 span.h1--state-bold
@@ -69,28 +78,56 @@ span.h1--state-bold
 	
 	
 .hero__content
-	background-color: $navColor-brigh
-	height: 555px
-	.hero__content__text
-		position: relative
-		top: 50%
-		transform: translatey(50%)
-	a.a--btn
-		font-weight: bold
-		padding: 20px 56px
-		background-color: $Red
+	background-color: $hero
+	.hero__content_items
+		height: 555px
+		.hero__content__text
+			position: relative
+			top: 50%
+			transform: translatey(-50%)
+			a.a--btn
+				font-weight: bold
+				padding: 20px 56px
+				background-color: $Red
+			
+.hero__content__image
+	transform: translatex(-30%)
+		
+		
+.about__content
+	background-color: $aboutGrey	
+	.about__content_container
+		height: 395px
+		.about__content_items
+			position: relative
+			top: 50%
+			transform: translatey(-50%)
+				
 	
 .information__block
 	height: 360px
+	&:nth-child(2)
+		transform: translatex(45px)
+
+.information__block:nth-child(3)
+		transform: translatex(45px)
 
 .information__block__content
 		position: relative
 		top: 50%
-		transform: translatey(50%)
+		transform: translatey(-50%)
+		a.a-infoBlock
+			color: $Red
+			font-weight: bold
 	
-a.a-infoBlock
-	color: $Red
-	font-weight: bold
+
+	
+
+
+//.information__block__content.p
+//	margin-left: 100px
+	
+	
 		
 
 

@@ -4,8 +4,9 @@ hmtl(lang="en")
 		title Kompetencijos centras
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width", initial-scale=1) 
-		link(rel="stylesheet", href=href="assets/css/bootstrap.min.css")
-		link(rel="stylesheet", href=href="assets/css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
 		link(rel="stylesheet", href="assets/css/style.css")
 		link(rel="stylesheet", href="assets/fonts/stylesheet.css")
 		include includes/mixins.pug
@@ -44,29 +45,44 @@ body
 	hero
 		.container.hero__content.container--full
 			.container
-				.row
+				.row.hero__content_items
 					.hero__content__text.col-lg-8.col-md-8
 						h1 Retų inkstų ligų ir urogenitalinės sistemos formavimosi ydų 
 							span.h1--state-bold kompetencijos centras
 						a.a--btn(href="index.html", target="_blank") Paslaugos
 					.hero__content__image.col-lg-4.col-md-4
 						img(src='assets/images/inkstai.jpg', alt='inkstai')
+					
+	section
+		.container.about__content.container--full
+			.container.about__content_container
+				.row.about__content_items
+					.hero__about__image.col-lg-4.col-md-4
+						p paveikslelis		
+					.hero__about__text.col-lg-8.col-md-8
+						h2 Apie centrą
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus. Sed ut erat posuere, viverra est eget, iaculis est. Aliquam ac purus urna. Praesent viverra ex felis, at rutrum diam malesuada non. Aliquam eu faucibus odio, nec eleifend risus. 
+						p Nam varius facilisis augue, ut ullamcorper nisi rhoncus eget. Aenean et tortor pretium, cursus ipsum ac, eleifend nibh.
+						
+	
 						
 	section.information
 		.container
 			.row
 				.information__block.col-lg-4
 					.information__block__content
-					+information_blocks("Paslaugos", 
+						+information_blocks("Paslaugos", 
 					"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
 					"index.html", 
 					"Paslaugos")
 				.information__block.col-lg-4
-					+information_blocks("Bendra informacija", 
-					"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
+					.information__block__content
+						+information_blocks("Bendra informacija", 
+					"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
 					"Bendra informacija")
 				.information__block.col-lg-4
-					+information_blocks("Apie ligas", 
-					"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
+					.information__block__content
+						+information_blocks("Apie ligas", 
+					"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
 					"Apie ligas ")
 						

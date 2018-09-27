@@ -1,18 +1,113 @@
-body
-	background-color: #05afa6
+$navColor: #05afa6
+$navColor-brigh: #1bbbb3
+$Red: #d71440
+$black: #000000
+$grey: #555555
+
+.nav
+	background-color: $navColor
+	padding: 10px 0 10px 0
+
+.navbar-brand	
+	margin-left: 100px
+	width: 325px;
+
+
+
+.nav__list
+	margin-left: 225px
+	margin-right: 100px
+	padding-top: 5px
+	ul
+		list-style: none;
+		li
+			padding: 15px
+			
+a
+	text-decoration: none
+	text-transform: uppercase
+	color: #ffffff
+	font-family: Gotham
+	font-weight: 300
+	font-size: 14px
+	&:hover
+		color: #ffffff
+		text-decoration: none
+			
+
 	
 h1
 	font-family: Gotham
 	font-weight: 300
 	font-size: 48px
 	color: #ffffff
-	float: left
+	
+
+h3
+	font-family: Gotham
+	font-weight: bold
+	font-size: 18px
+	color: $black
+
+p
+	font-family: Gotham book
+	font-weight: bold
+	font-size: 14px
+	color: $grey
+	
 
 span.h1--state-bold
 	font-weight: bold
 
-img.logo
-	margin-left: 7%
+.flex
+	display: flex
+	flex-wrap: wrap
+	
+
+.container--full
+	width: 100vw
+	
+	
+.hero__content
+	background-color: $navColor-brigh
+	height: 555px
+	.hero__content__text
+		position: relative
+		top: 50%
+		transform: translatey(50%)
+	a.a--btn
+		font-weight: bold
+		padding: 20px 56px
+		background-color: $Red
+	
+.information__block
+	height: 360px
+
+.information__block__content
+		position: relative
+		top: 50%
+		transform: translatey(50%)
+	
+a.a-infoBlock
+	color: $Red
+	font-weight: bold
+		
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
 
 
 

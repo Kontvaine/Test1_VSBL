@@ -2,13 +2,14 @@ mixin navigation
 	.nav
 		.container.container--full
 			.row
-				.col-lg-2.col-md-2
+				.col-lg-2.col-md-2.col-sm-12
 					.navbar-brand
 						a.logo(href='#mainpage')
 							img(src='assets/images/logo.png', alt='logo')
+						
 
-				.nav__list.col-lg-6.col-md-6
-					ul.flex
+				.nav__list.col-md-10
+					ul.list-inline.text-right
 						li
 							a(href="#") Apie mus  
 						li 
@@ -23,10 +24,53 @@ mixin navigation
 							a(href="#") Komanda 
 						li 
 							a(href="#") Kontaktai
-							
+						li
+							.dropdown
+								button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+									| LT
+									span.caret
+								ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+									li
+										a(href='#') Action
+									li
+										a(href='#') Another action
+									li
+										a(href='#') Something else here
+									li.divider(role='separator')
+									li
+										a(href='#') Separated link							
+
+						
 mixin information_blocks(title, text, link, link_headline)
 	h3.main-title #{title}
 	p #{text}
 	a.a-infoBlock(href="#{link}", target='_blank') #{link_headline}   
 		i.fas.fa-arrow-right
-	
+		
+		
+mixin footer
+	footer
+		.nav__footer.container--full
+			.container
+				.row
+					.col-lg-2.col-md-2.col-sm-12.navbar-brand
+						a.logo(href='#mainpage')
+							img(src='assets/images/logo_text.png', alt='logo text')
+
+
+				.col-md-10.nav__list
+					ul.list-inline.text-right
+						li.li_footer
+							a.a--footer(href="#") Apie mus  
+						li 
+							a.a--footer(href="#") Paslaugos
+						li
+							a.a--footer(href="#") Informacija pacientams 
+						li 
+							a.a--footer(href="#") Paslaugos
+						li 
+							a.a--footer(href="#") Mokslas
+						li
+							a.a--footer(href="#") Komanda 
+						li 
+							a.a--footer(href="#") Kontaktai

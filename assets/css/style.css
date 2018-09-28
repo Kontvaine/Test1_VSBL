@@ -1,16 +1,21 @@
-.nav {
+.container--full {
+  width: 100%; }
+
+header {
   background-color: #05afa6;
   padding: 10px 0 10px 0; }
-  .nav .navbar-brand {
-    margin-left: 100px;
-    width: 325px; }
-
-.nav__list {
-  margin-right: 100px; }
-  .nav__list ul {
-    list-style: none; }
-    .nav__list ul li {
-      padding: 15px; }
+  header a.header__logo {
+    display: block;
+    float: left; }
+    header a.header__logo img {
+      width: 320px; }
+  header .header__list {
+    margin-top: 10px;
+    float: right; }
+    header .header__list ul {
+      list-style: none; }
+      header .header__list ul li {
+        padding: 15px; }
 
 a {
   text-decoration: none;
@@ -35,6 +40,7 @@ h2 {
   font-family: Gotham;
   font-weight: bold;
   font-size: 36px;
+  line-height: 58px;
   color: #000000; }
 
 h3 {
@@ -61,24 +67,11 @@ p {
   background-color: #1bbbb3;
   border-left: 3px solid #ffffff; }
 
-span.h1--state-bold {
-  font-weight: bold; }
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.container--full {
-  width: 100%; }
-
 section#hero {
   background-color: #1bbbb3;
-  background-image: url(../images/inkstai.jpg);
+  background-image: url(../images/inkstai.png);
   background-repeat: no-repeat;
-  background-position: 80% center;
+  background-position: 98% center;
   height: 555px; }
   section#hero .hero__content {
     position: relative;
@@ -86,43 +79,35 @@ section#hero {
     -webkit-transform: translatey(-50%);
     -ms-transform: translatey(-50%);
     transform: translatey(-50%); }
-    section#hero .hero__content .hero__content__text a.a--btn {
+    section#hero .hero__content span.h1--state-bold {
+      font-weight: bold; }
+    section#hero .hero__content a.a--btn {
       font-weight: bold;
-      padding: 20px 56px;
-      background-color: #d71440; }
+      padding: 20px 60px;
+      margin-top: 40px;
+      background-color: #d71440;
+      display: inline-block; }
 
-.about__content {
-  background-color: #eaeef1; }
-  .about__content .about__content_container {
-    height: 45vh; }
-    .about__content .about__content_container .about__content_items {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translatey(-50%);
-      -ms-transform: translatey(-50%);
-      transform: translatey(-50%); }
+main {
+  background-color: #eaeef1;
+  background-image: url(../images/burbulai.png);
+  background-repeat: no-repeat;
+  background-position: 17% center;
+  height: 400px; }
+  main .about__content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    transform: translatey(-50%); }
 
-.information__block {
+.information {
   height: 360px; }
-  .information__block:nth-child(2) {
-    -webkit-transform: translatex(45px);
-    -ms-transform: translatex(45px);
-    transform: translatex(45px); }
-
-.information__block:nth-child(3) {
-  -webkit-transform: translatex(45px);
-  -ms-transform: translatex(45px);
-  transform: translatex(45px); }
-
-.information__block__content {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-  -ms-transform: translatey(-50%);
-  transform: translatey(-50%); }
-  .information__block__content a.a-infoBlock {
-    color: #d71440;
-    font-weight: bold; }
+  .information .information__block {
+    position: relative; }
+    .information .information__block a.a-information_block {
+      color: #d71440;
+      font-weight: bold; }
 
 .nav__footer {
   background-color: #ffffff;

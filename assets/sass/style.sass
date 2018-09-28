@@ -6,19 +6,27 @@ $black: #000000
 $paragraphGrey: #555555
 $aboutGrey: #eaeef1
 
-.nav
+.container--full
+	width: 100%
+	
+
+header
 	background-color: $navColor
 	padding: 10px 0 10px 0
-	.navbar-brand	
-		margin-left: 100px
-		width: 325px;
 
-.nav__list
-	margin-right: 100px
-	ul
-		list-style: none;
-		li
-			padding: 15px
+	a.header__logo
+		display: block
+		float: left
+		img
+			width: 320px 
+			
+	.header__list
+		margin-top: 10px
+		float: right
+		ul
+			list-style: none;
+			li
+				padding: 15px
 			
 a
 	text-decoration: none
@@ -43,6 +51,7 @@ h2
 	font-family: Gotham
 	font-weight: bold
 	font-size: 36px
+	line-height: 58px
 	color: $black
 
 h3
@@ -69,70 +78,58 @@ p
 	background-color: #1bbbb3
 	border-left: 3px solid #ffffff
 	
-	
 
-span.h1--state-bold
-	font-weight: bold
-
-.flex
-	display: flex
-	flex-wrap: wrap
-	
-
-.container--full
-	width: 100%
-	
 section#hero
 	background-color: $hero
-	background-image: url(../images/inkstai.jpg) 
+	background-image: url(../images/inkstai.png) 
 	background-repeat: no-repeat
-	background-position: 80% center
+	background-position: 98% center
 	height: 555px
 	
 	.hero__content
 		position: relative
 		top: 50%
 		transform: translatey(-50%)
+		span.h1--state-bold
+			font-weight: bold
+		a.a--btn
+			font-weight: bold
+			padding: 20px 60px
+			margin-top: 40px
+			background-color: $Red
+			display: inline-block
 
 
-	
-
-		.hero__content__text
-
-			a.a--btn
-				font-weight: bold
-				padding: 20px 56px
-				background-color: $Red
-			
-.hero__content__image
-//	transform: translatex(-30%)
-		
-		
-.about__content
-	background-color: $aboutGrey	
-	.about__content_container
-		height: 45vh
-		.about__content_items
-			position: relative
-			top: 50%
-			transform: translatey(-50%)
-				
-	
-.information__block
-	height: 360px
-	&:nth-child(2)
-		transform: translatex(45px)
-
-.information__block:nth-child(3)
-		transform: translatex(45px)
-
-.information__block__content
+main
+	background-color: #eaeef1	
+	background-image: url(../images/burbulai.png) 
+	background-repeat: no-repeat
+	background-position: 17% center
+	height: 400px
+	.about__content
 		position: relative
 		top: 50%
 		transform: translatey(-50%)
-		a.a-infoBlock
+	
+	
+	
+.information
+	height: 360px
+	.information__block
+		position: relative
+		//top: 50%
+		//transform: translatey(-50%)
+		a.a-information_block
 			color: $Red
 			font-weight: bold
+		
+
+	
+		//&:nth-child(2)
+//		transform: translatex(45px)
+
+//.information__block:nth-child(3)
+		transform: translatex(45px)
 	
 	
 .nav__footer

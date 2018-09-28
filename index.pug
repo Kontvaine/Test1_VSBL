@@ -14,17 +14,14 @@ html(lang="en")
 
 	body
 
-		.nav
+		header
 			.container.container--full
 				.row
-					.col-lg-2.col-md-2.col-sm-12
-						.navbar-brand
-							a.logo(href='#mainpage')
-								img(src='assets/images/logo.png', alt='logo')
-
-
-					.col-md-10
-						.nav__list
+					.col-sm-12
+					
+						a.header__logo(href='#mainpage')
+							img(src='assets/images/logo.png', alt='logo')
+						.header__list
 							ul.list-inline.text-right
 								li
 									a(href="#") Apie mus  
@@ -69,21 +66,41 @@ html(lang="en")
 							// sitas a nurodzius .hero__content__text buti centre, apsimeta, kad nepriklauso tam elementui???
 						//.hero__content__image.col-lg-4.col-md-4
 							img(src='assets/images/inkstai.jpg', alt='inkstai')
-
-		section
-			.container.about__content.container--full
-				.container.about__content_container
-					.row.about__content_items
-						.about__content__image.col-lg-4.col-md-4
-							p paveikslelis		
-						.about__content__text.col-lg-8.col-md-8
-							h2 Apie centrą
-							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus. Sed ut erat posuere, viverra est eget, iaculis est. Aliquam ac purus urna. Praesent viverra ex felis, at rutrum diam malesuada non. Aliquam eu faucibus odio, nec eleifend risus. 
-							p Nam varius facilisis augue, ut ullamcorper nisi rhoncus eget. Aenean et tortor pretium, cursus ipsum ac, eleifend nibh.
-
+							
+							
+							
+		main
+			.about__content
+				.container
+					.row
+						.col-lg-8.col-md-8.col-md-offset-4
+								h2 Apie centrą
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus. Sed ut erat posuere, viverra est eget, iaculis est. Aliquam ac purus urna. Praesent viverra ex felis, at rutrum diam malesuada non. Aliquam eu faucibus odio, nec eleifend risus. 
+								p Nam varius facilisis augue, ut ullamcorper nisi rhoncus eget. Aenean et tortor pretium, cursus ipsum ac, eleifend nibh.
 
 
 		section.information
+			.container
+				.row
+					.col-lg-4
+						.information__block
+							+information_blocks("Paslaugos", 
+						"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
+						"index.html", 
+						"Paslaugos")
+					.col-lg-4
+						.information__block
+							+information_blocks("Bendra informacija", 
+						"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
+						"Bendra informacija")
+					.col-lg-4
+						.information__block
+							+information_blocks("Apie ligas", 
+						"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
+						"Apie ligas ")
+
+
+		//section.information
 			.container
 				.row
 					.information__block.col-lg-4

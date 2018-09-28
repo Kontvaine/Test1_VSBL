@@ -1,5 +1,5 @@
 doctype html
-hmtl(lang="en")
+html(lang="en")
 	head
 		title Kompetencijos centras
 		meta(charset="utf-8")
@@ -12,121 +12,121 @@ hmtl(lang="en")
 		include includes/mixins.pug
 		
 
-body
-	
-	.nav
-		.container.container--full
-			.row
-				.col-lg-2.col-md-2.col-sm-12
-					.navbar-brand
-						a.logo(href='#mainpage')
-							img(src='assets/images/logo.png', alt='logo')
-						
+	body
 
-				.nav__list.col-md-10
-					ul.list-inline.text-right
-						li
-							a(href="#") Apie mus  
-						li 
-							a(href="#") Paslaugos
-						li
-							a(href="#") Informacija pacientams 
-						li 
-							a(href="#") Paslaugos
-						li 
-							a(href="#") Mokslas
-						li
-							a(href="#") Komanda 
-						li 
-							a(href="#") Kontaktai
-						li
-							.dropdown
-								button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-									| LT
-									span.caret
-								ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-									li
-										a(href='#') Action
-									li
-										a(href='#') Another action
-									li
-										a(href='#') Something else here
-									li.divider(role='separator')
-									li
-										a(href='#') Separated link	
-							
+		.nav
+			.container.container--full
+				.row
+					.col-lg-2.col-md-2.col-sm-12
+						.navbar-brand
+							a.logo(href='#mainpage')
+								img(src='assets/images/logo.png', alt='logo')
 
 
-	hero
-		.container.hero__content.container--full
-			.container
-				.row.hero__content_items
-					.hero__content__text.col-lg-8.col-md-8
-						h1 Retų inkstų ligų ir urogenitalinės sistemos formavimosi ydų 
-							span.h1--state-bold kompetencijos centras
-						a.a--btn(href="index.html", target="_blank") Paslaugos
-						// sitas a nurodzius .hero__content__text buti centre, apsimeta, kad nepriklauso tam elementui???
-					.hero__content__image.col-lg-4.col-md-4
-						img(src='assets/images/inkstai.jpg', alt='inkstai')
-					
-	section
-		.container.about__content.container--full
-			.container.about__content_container
-				.row.about__content_items
-					.about__content__image.col-lg-4.col-md-4
-						p paveikslelis		
-					.about__content__text.col-lg-8.col-md-8
-						h2 Apie centrą
-						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus. Sed ut erat posuere, viverra est eget, iaculis est. Aliquam ac purus urna. Praesent viverra ex felis, at rutrum diam malesuada non. Aliquam eu faucibus odio, nec eleifend risus. 
-						p Nam varius facilisis augue, ut ullamcorper nisi rhoncus eget. Aenean et tortor pretium, cursus ipsum ac, eleifend nibh.
-						
-	
-						
-	section.information
-		.container
-			.row
-				.information__block.col-lg-4
-					.information__block__content 
-						+information_blocks("Paslaugos", 
-					"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
-					"index.html", 
-					"Paslaugos")
-				.information__block.col-lg-4
-					.information__block__content
-						+information_blocks("Bendra informacija", 
-					"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
-					"Bendra informacija")
-				.information__block.col-lg-4
-					.information__block__content
-						+information_blocks("Apie ligas", 
-					"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
-					"Apie ligas ")
-	
-	footer
-		.nav__footer.container--full
+					.col-md-10
+						.nav__list
+							ul.list-inline.text-right
+								li
+									a(href="#") Apie mus  
+								li 
+									a(href="#") Paslaugos
+								li
+									a(href="#") Informacija pacientams 
+								li 
+									a(href="#") Paslaugos
+								li 
+									a(href="#") Mokslas
+								li
+									a(href="#") Komanda 
+								li 
+									a(href="#") Kontaktai
+								li
+									.dropdown
+										button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+											| LT
+											span.caret
+										ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+											li
+												a(href='#') Action
+											li
+												a(href='#') Another action
+											li
+												a(href='#') Something else here
+											li.divider(role='separator')
+											li
+												a(href='#') Separated link	
+
+
+
+		section#hero
+			.hero__content
+				.container
+					.row
+						.col-lg-8.col-md-8
+							h1 Retų inkstų ligų ir urogenitalinės sistemos formavimosi ydų 
+								span.h1--state-bold kompetencijos centras
+							a.a--btn(href="index.html", target="_blank") Paslaugos
+							// sitas a nurodzius .hero__content__text buti centre, apsimeta, kad nepriklauso tam elementui???
+						//.hero__content__image.col-lg-4.col-md-4
+							img(src='assets/images/inkstai.jpg', alt='inkstai')
+
+		section
+			.container.about__content.container--full
+				.container.about__content_container
+					.row.about__content_items
+						.about__content__image.col-lg-4.col-md-4
+							p paveikslelis		
+						.about__content__text.col-lg-8.col-md-8
+							h2 Apie centrą
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus. Sed ut erat posuere, viverra est eget, iaculis est. Aliquam ac purus urna. Praesent viverra ex felis, at rutrum diam malesuada non. Aliquam eu faucibus odio, nec eleifend risus. 
+							p Nam varius facilisis augue, ut ullamcorper nisi rhoncus eget. Aenean et tortor pretium, cursus ipsum ac, eleifend nibh.
+
+
+
+		section.information
 			.container
 				.row
-					.col-lg-2.col-md-2.col-sm-12.navbar-brand
-						a.logo(href='#mainpage')
-							img(src='assets/images/logo_text.png', alt='logo text')
+					.information__block.col-lg-4
+						.information__block__content 
+							+information_blocks("Paslaugos", 
+						"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
+						"index.html", 
+						"Paslaugos")
+					.information__block.col-lg-4
+						.information__block__content
+							+information_blocks("Bendra informacija", 
+						"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
+						"Bendra informacija")
+					.information__block.col-lg-4
+						.information__block__content
+							+information_blocks("Apie ligas", 
+						"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
+						"Apie ligas ")
+
+		footer
+			.nav__footer.container--full
+				.container
+					.row
+						.col-lg-2.col-md-2.col-sm-12.navbar-brand
+							a.logo(href='#mainpage')
+								img(src='assets/images/logo_text.png', alt='logo text')
 
 
-					.col-md-10.nav__list
-						ul.list-inline.text-right
-							li.li_footer
-								a.a--footer(href="#") Apie mus  
-							li 
-								a.a--footer(href="#") Paslaugos
-							li
-								a.a--footer(href="#") Informacija pacientams 
-							li 
-								a.a--footer(href="#") Paslaugos
-							li 
-								a.a--footer(href="#") Mokslas
-							li
-								a.a--footer(href="#") Komanda 
-							li 
-								a.a--footer(href="#") Kontaktai
+						.col-md-10
+							ul.list-inline.text-right
+								li.li_footer
+									a.a--footer(href="#") Apie mus  
+								li 
+									a.a--footer(href="#") Paslaugos
+								li
+									a.a--footer(href="#") Informacija pacientams 
+								li 
+									a.a--footer(href="#") Paslaugos
+								li 
+									a.a--footer(href="#") Mokslas
+								li
+									a.a--footer(href="#") Komanda 
+								li 
+									a.a--footer(href="#") Kontaktai
 
-	
-						
+

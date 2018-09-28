@@ -3,11 +3,10 @@
   padding: 10px 0 10px 0; }
   .nav .navbar-brand {
     margin-left: 100px;
-    width: 325px;
-    height: 15vh; }
+    width: 325px; }
 
 .nav__list {
-  margin-left: 100px; }
+  margin-right: 100px; }
   .nav__list ul {
     list-style: none; }
     .nav__list ul li {
@@ -51,6 +50,17 @@ p {
   line-height: 30px;
   color: #555555; }
 
+.about__pic p {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 16px;
+  color: #ffffff; }
+
+.pic__under_box {
+  padding: 20px;
+  background-color: #1bbbb3;
+  border-left: 3px solid #ffffff; }
+
 span.h1--state-bold {
   font-weight: bold; }
 
@@ -64,20 +74,22 @@ span.h1--state-bold {
 .container--full {
   width: 100%; }
 
-.hero__content {
-  background-color: #1bbbb3; }
-  .hero__content .hero__content_items {
-    height: 555px; }
-    .hero__content .hero__content_items .hero__content__text {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translatey(-50%);
-      -ms-transform: translatey(-50%);
-      transform: translatey(-50%); }
-      .hero__content .hero__content_items .hero__content__text a.a--btn {
-        font-weight: bold;
-        padding: 20px 56px;
-        background-color: #d71440; }
+section#hero {
+  background-color: #1bbbb3;
+  background-image: url(../images/inkstai.jpg);
+  background-repeat: no-repeat;
+  background-position: 80% center;
+  height: 555px; }
+  section#hero .hero__content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    transform: translatey(-50%); }
+    section#hero .hero__content .hero__content__text a.a--btn {
+      font-weight: bold;
+      padding: 20px 56px;
+      background-color: #d71440; }
 
 .about__content {
   background-color: #eaeef1; }

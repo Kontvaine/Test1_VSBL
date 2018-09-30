@@ -56,17 +56,6 @@ p {
   line-height: 30px;
   color: #555555; }
 
-.about__pic p {
-  font-weight: normal;
-  font-style: italic;
-  font-size: 16px;
-  color: #ffffff; }
-
-.pic__under_box {
-  padding: 20px;
-  background-color: #1bbbb3;
-  border-left: 3px solid #ffffff; }
-
 section#hero {
   background-color: #1bbbb3;
   background-image: url(../images/inkstai.png);
@@ -114,8 +103,9 @@ main {
       font-weight: bold;
       display: inline-block; }
 
-.information__block__content {
-  border-right: 1px solid #e0e6ea; }
+.information__blocks__content:nth-child(1) {
+  border-right: 1px solid #e0e6ea;
+  border-left: 1px solid #e0e6ea; }
 
 footer {
   display: block;
@@ -127,7 +117,7 @@ footer {
       width: 185px;
       padding: 50px 0 50px 0; }
   footer .footer__list {
-    margin-top: 40px;
+    margin-top: 50px;
     float: right; }
     footer .footer__list ul {
       list-style: none; }
@@ -137,3 +127,53 @@ footer {
     color: #999999;
     font-size: 12px;
     line-height: 15px; }
+
+article.about h2 {
+  text-align: center; }
+
+.about__pic__under p {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 16px;
+  color: #ffffff; }
+
+.about__pic {
+  height: 345px; }
+
+.about__pic__under {
+  width: 115%;
+  padding: 15px 25px;
+  background-color: #1bbbb3;
+  position: relative;
+  top: -18%;
+  -webkit-transform: translatex(10%);
+  -ms-transform: translatex(10%);
+  transform: translatex(10%);
+  border: 1px solid #1bbbb3;
+  border-radius: 3px; }
+  .about__pic__under p {
+    position: relative; }
+
+.about__pic__under p::before {
+  content: " ";
+  margin: 0 -15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  height: 85px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px; }
+
+@media all and (max-width: 767px) {
+  .information {
+    height: 560px; }
+  main {
+    height: 450px; }
+  section#hero {
+    height: 600px; } }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .information {
+    height: 430px; } }

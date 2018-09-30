@@ -115,36 +115,59 @@ main
 	
 .information
 	height: 360px
-	.information__block
+	.information__blocks
 		position: relative
-		//top: 50%
-		//transform: translatey(-50%)
+		top: 50%
+		transform: translatey(-50%)
 		a.a-information_block
 			color: $Red
 			font-weight: bold
+			display: inline-block
+	
+.information__block__content
+	border-rigth:
 		
 
 	
-		//&:nth-child(2)
-//		transform: translatex(45px)
+.information__block__content:nth-child(2)
+		transform: translatex(45px)
 
-//.information__block:nth-child(3)
+.information__block__content:nth-child(3)
 		transform: translatex(45px)
 	
 	
-.nav__footer
-	background-color: #ffffff
+footer
+	
 	border-top: 1px solid #e0e6ea
+	
+	a.footer__logo
+		display: block
+		float: left
+		img
+			width: 185px
+			padding: 50px 0 50px 0
+	
+	.footer__list
+		margin-top: 40px
+		float: right
+		ul
+			list-style: none;
+			li
+				padding: 15px
+
 	.a--footer
 		color:#999999
 		font-size: 12px
 		line-height: 15px
 		
 	//kaip daryt su situo ul/li?
-.li_footer
-	padding: 10px
+//.li_footer
+//	padding: 10px
 
-
+//header a.header__logo {
+//    display: block;
+//    float: left;
+//}
 	
 
 

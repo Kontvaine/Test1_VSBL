@@ -80,70 +80,77 @@ html(lang="en")
 
 
 		section.information
-			.container
-				.row
-					.col-lg-4
-						.information__block
-							+information_blocks("Paslaugos", 
-						"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
-						"index.html", 
-						"Paslaugos")
-					.col-lg-4
-						.information__block
-							+information_blocks("Bendra informacija", 
-						"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
-						"Bendra informacija")
-					.col-lg-4
-						.information__block
-							+information_blocks("Apie ligas", 
-						"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
-						"Apie ligas ")
-
-
-		//section.information
-			.container
-				.row
-					.information__block.col-lg-4
-						.information__block__content 
-							+information_blocks("Paslaugos", 
-						"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
-						"index.html", 
-						"Paslaugos")
-					.information__block.col-lg-4
-						.information__block__content
-							+information_blocks("Bendra informacija", 
-						"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
-						"Bendra informacija")
-					.information__block.col-lg-4
-						.information__block__content
-							+information_blocks("Apie ligas", 
-						"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
-						"Apie ligas ")
-
-		footer
-			.nav__footer.container--full
+			.information__blocks
 				.container
 					.row
-						.col-lg-2.col-md-2.col-sm-12.navbar-brand
-							a.logo(href='#mainpage')
+						.col-lg-4.col-md-4
+							.information__blocks__content
+							//mixin information_blocks(title, text, link, link_headline)
+							+information_blocks("Paslaugos", 
+							"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
+							"index.html", 
+							"Paslaugos")
+						.col-lg-4.col-md-4
+							.information__blocks__content
+							+information_blocks("Bendra informacija", 
+							"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
+							"Bendra informacija")
+						.col-lg-4.col-md-4
+							.information__blocks__content
+							+information_blocks("Apie ligas", 
+							"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
+							"Apie ligas ")
+
+
+		footer
+			.container--full
+				.container
+					.row
+						.col-sm-12
+							a.footer__logo(href='#mainpage')
 								img(src='assets/images/logo_text.png', alt='logo text')
-
-
-						.col-md-10
-							ul.list-inline.text-right
-								li.li_footer
-									a.a--footer(href="#") Apie mus  
-								li 
-									a.a--footer(href="#") Paslaugos
-								li
-									a.a--footer(href="#") Informacija pacientams 
-								li 
-									a.a--footer(href="#") Paslaugos
-								li 
-									a.a--footer(href="#") Mokslas
-								li
-									a.a--footer(href="#") Komanda 
-								li 
-									a.a--footer(href="#") Kontaktai
+							.footer__list
+								ul.list-inline.text-right
+									li
+										a.a--footer(href="#") Apie mus  
+									li 
+										a.a--footer(href="#") Paslaugos
+									li
+										a.a--footer(href="#") Informacija pacientams 
+									li 
+										a.a--footer(href="#") Paslaugos
+									li 
+										a.a--footer(href="#") Mokslas
+									li
+										a.a--footer(href="#") Komanda 
+									li 
+										a.a--footer(href="#") Kontaktai
+									
+									
+//		footer
+//			.nav__footer.container--full
+//				.container
+//					.row
+//						.col-lg-2.col-md-2.col-sm-12.navbar-brand
+//							a.logo(href='#mainpage')
+//								img(src='assets/images/logo_text.png', alt='logo text')
+//
+//
+//						.col-md-10
+//							ul.list-inline.text-right
+//								li.li_footer
+//									a.a--footer(href="#") Apie mus  
+//								li 
+//									a.a--footer(href="#") Paslaugos
+//								li
+//									a.a--footer(href="#") Informacija pacientams 
+//								li 
+//									a.a--footer(href="#") Paslaugos
+//								li 
+//									a.a--footer(href="#") Mokslas
+//								li
+//									a.a--footer(href="#") Komanda 
+//								li 
+//									a.a--footer(href="#") Kontaktai
 
 

@@ -141,7 +141,7 @@ article.about h2 {
   height: 345px; }
 
 .about__pic__under {
-  width: 115%;
+  display: block;
   padding: 15px 25px;
   background-color: #1bbbb3;
   position: relative;

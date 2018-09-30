@@ -118,6 +118,7 @@ main {
   border-right: 1px solid #e0e6ea; }
 
 footer {
+  display: block;
   border-top: 1px solid #e0e6ea; }
   footer a.footer__logo {
     display: block;

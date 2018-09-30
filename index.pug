@@ -83,22 +83,23 @@ html(lang="en")
 				.container
 					.row
 						.col-lg-4.col-md-4
-							.information__blocks__content
+							
 							//mixin information_blocks(title, text, link, link_headline)
-							+information_blocks("Paslaugos", 
-							"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
-							"index.html", 
-							"Paslaugos")
+							.information__blocks__content
+								+information_blocks("Paslaugos", 
+								"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
+								"index.html", 
+								"Paslaugos")
 						.col-lg-4.col-md-4
 							.information__blocks__content
-							+information_blocks("Bendra informacija", 
-							"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
-							"Bendra informacija")
+								+information_blocks("Bendra informacija", 
+								"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
+								"Bendra informacija")
 						.col-lg-4.col-md-4
 							.information__blocks__content
-							+information_blocks("Apie ligas", 
-							"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
-							"Apie ligas ")
+								+information_blocks("Apie ligas", 
+								"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
+								"Apie ligas ")
 
 
 		footer

@@ -88,7 +88,6 @@ section#hero
 			background-color: $Red
 			display: inline-block
 
-
 main
 	background-color: #eaeef1	
 	background-image: url(../images/burbulai.png) 
@@ -99,8 +98,6 @@ main
 		position: relative
 		top: 50%
 		transform: translatey(-50%)
-	
-	
 	
 .information
 	
@@ -114,12 +111,9 @@ main
 			font-weight: bold
 			display: inline-block
 	
-.information__blocks__content:nth-child(1)
-	//content: "heeee"
+.information__blocks:nth-child(2) 
 	border-right: 1px solid #e0e6ea
 	border-left: 1px solid #e0e6ea
-
-	
 	
 footer
 	display: block
@@ -145,7 +139,7 @@ footer
 		font-size: 12px
 		line-height: 15px
 	
-//About
+//About html
 
 article.about h2
 	text-align: center
@@ -188,10 +182,6 @@ article.about h2
 	border-radius: 20px
   
 	
-	
-	
-
-
 @media all and (max-width:767px)
 	.information
 		height: 560px	
@@ -203,6 +193,14 @@ article.about h2
 @media all and (min-width:768px ) and (max-width:1024px)
 	.information 
     height: 430px
+	
+	
+//=margin_left($pixels)
+	margin-left: $pixels	
+
+//.test
+	+margin_left(300px)
+		
 	
 		
 	//kaip daryt su situo ul/li?

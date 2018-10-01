@@ -1,17 +1,8 @@
 doctype html
 html(lang="en")
-	head
-		title Kompetencijos centras
-		meta(charset="utf-8")
-		meta(name="viewport", content="width=device-width", initial-scale=1) 
-		link(rel="stylesheet", href="assets/css/bootstrap.min.css")
-		link(rel="stylesheet", href="assets/css/bootstrap-theme.min.css")
-		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
-		link(rel="stylesheet", href="assets/css/style.css")
-		link(rel="stylesheet", href="assets/fonts/stylesheet.css")
-		include includes/mixins.pug
+	include includes/head.pug
 		
-
+		
 	body
 
 		header
@@ -19,7 +10,7 @@ html(lang="en")
 				.row
 					.col-sm-12
 					
-						a.header__logo(href='#mainpage')
+						a.header__logo(href='index.html')
 							img(src='assets/images/logo.png', alt='logo')
 						.header__list
 							ul.list-inline.text-right
@@ -38,20 +29,15 @@ html(lang="en")
 									a(href="#") Kontaktai
 								li
 									.dropdown
-										button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+										button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 											| LT
 											span.caret
 										ul.dropdown-menu(aria-labelledby='dropdownMenu1')
 											li
-												a(href='#') Action
+												a(href='#') ENG
 											li
-												a(href='#') Another action
-											li
-												a(href='#') Something else here
-											li.divider(role='separator')
-											li
-												a(href='#') Separated link	
-
+												a(href='#') SV
+											
 
 
 		section#hero
@@ -101,54 +87,13 @@ html(lang="en")
 								"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
 								"Apie ligas ")
 
+		+footer
 
-		footer
-			.container--full
-				.container
-					.row
-						.col-sm-12
-							a.footer__logo(href='#mainpage')
-								img(src='assets/images/logo_text.png', alt='logo text')
-							.footer__list
-								ul.list-inline.text-right
-									li
-										a.a--footer(href="#") Apie mus  
-									li 
-										a.a--footer(href="#") Paslaugos
-									li
-										a.a--footer(href="#") Informacija pacientams 
-									li 
-										a.a--footer(href="#") Mokslas
-									li
-										a.a--footer(href="#") Komanda 
-									li 
-										a.a--footer(href="#") Kontaktai
+
+		include includes/head.pug
+
 									
 									
-//		footer
-//			.nav__footer.container--full
-//				.container
-//					.row
-//						.col-lg-2.col-md-2.col-sm-12.navbar-brand
-//							a.logo(href='#mainpage')
-//								img(src='assets/images/logo_text.png', alt='logo text')
-//
-//
-//						.col-md-10
-//							ul.list-inline.text-right
-//								li.li_footer
-//									a.a--footer(href="#") Apie mus  
-//								li 
-//									a.a--footer(href="#") Paslaugos
-//								li
-//									a.a--footer(href="#") Informacija pacientams 
-//								li 
-//									a.a--footer(href="#") Paslaugos
-//								li 
-//									a.a--footer(href="#") Mokslas
-//								li
-//									a.a--footer(href="#") Komanda 
-//								li 
-//									a.a--footer(href="#") Kontaktai
+
 
 

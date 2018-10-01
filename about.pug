@@ -1,19 +1,8 @@
 doctype html
 html(lang="en")
-	head
-		title APIE Kompetencijos centras
-		meta(charset="utf-8")
-		meta(name="viewport", content="width=device-width", initial-scale=1) 
-		link(rel="stylesheet", href="assets/css/bootstrap.min.css")
-		link(rel="stylesheet", href="assets/css/bootstrap-theme.min.css")
-		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
-		link(rel="stylesheet", href="assets/css/style.css")
-		link(rel="stylesheet", href="assets/fonts/stylesheet.css")
-		include includes/mixins.pug
-		
+	include includes/head.pug
 
 body
-	
 	+header
 	.container.container--full.line
 		h3 pilka linija
@@ -40,6 +29,7 @@ body
 
 
 	+footer
+	include includes/js.pug
 	
 
 						

@@ -103,7 +103,7 @@ main {
       font-weight: bold;
       display: inline-block; }
 
-.information__blocks__content:nth-child(1) {
+.information__blocks:nth-child(2) {
   border-right: 1px solid #e0e6ea;
   border-left: 1px solid #e0e6ea; }
 

@@ -5,40 +5,8 @@ html(lang="en")
 		
 	body
 
-		header
-			.container.container--full
-				.row
-					.col-sm-12
-					
-						a.header__logo(href='index.html')
-							img(src='assets/images/logo.png', alt='logo')
-						.header__list
-							ul.list-inline.text-right
-								li
-									a(href="about.html") Apie mus  
-								li 
-									a(href="#") Paslaugos
-								li
-									a(href="#") Informacija pacientams 
-								
-								li 
-									a(href="#") Mokslas
-								li
-									a(href="#") Komanda 
-								li 
-									a(href="#") Kontaktai
-								li
-									.dropdown
-										button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-											| LT
-											span.caret
-										ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-											li
-												a(href='#') ENG
-											li
-												a(href='#') SV
-											
-
+		+header
+			
 
 		section#hero
 			.hero__content
@@ -77,20 +45,20 @@ html(lang="en")
 								"index.html", 
 								"Paslaugos")
 						.col-lg-4.col-md-4
-							.information__blocks__content
+							.information__blocks__content.aside
 								+information_blocks("Bendra informacija", 
 								"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
 								"Bendra informacija")
 						.col-lg-4.col-md-4
-							.information__blocks__content
+							.information__blocks__content.aside
 								+information_blocks("Apie ligas", 
-								"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", "#",
+								"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis nibh. Aenean eleifend auctor aliquam.", "#",
 								"Apie ligas ")
 
 		+footer
 
 
-		include includes/head.pug
+		include includes/js.pug
 
 									
 									

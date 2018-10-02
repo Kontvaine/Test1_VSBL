@@ -4,8 +4,14 @@ html(lang="en")
 
 body
 	+header
-	.container.container--full.line
-		h3 pilka linija
+	
+	
+
+	nav(aria-label='breadcrumb')
+		ol.breadcrumb
+			li.breadcrumb-item
+				a.a--breadcrumb(href='index.html') Pagrindinis
+			li.breadcrumb-item(aria-current='page') Apie mus
 		
 	article.about
 		.container
@@ -30,6 +36,7 @@ body
 
 	+footer
 	include includes/js.pug
+
 	
 
 						

@@ -33,7 +33,7 @@ a
 	text-transform: uppercase
 	color: #ffffff
 	font-family: Gotham
-	font-weight: 300
+	font-weight: 500
 	font-size: 14px
 	line-height: 15px
 	&:hover
@@ -106,14 +106,40 @@ main
 		position: relative
 		top: 50%
 		transform: translatey(-50%)
+	
 		a.a-information_block
 			color: $Red
 			font-weight: bold
 			display: inline-block
 	
-.information__blocks:nth-child(2) 
-	border-right: 1px solid #e0e6ea
-	border-left: 1px solid #e0e6ea
+//.information__blocks.container.row.col-lg-4.col-md-4.information__blocks__content:nth-child(2)
+//		border-right: 1px solid #e0e6ea
+//		border-left: 1px solid #e0e6ea
+
+
+
+
+//.aside
+//	transform: translatex(45px)
+	
+
+
+
+
+//.information__block {
+//.information {
+//  height: 360px; }
+//  .information__block:nth-child(2) {
+//    -webkit-transform: translatex(45px);
+//    -ms-transform: translatex(45px);
+//    transform: translatex(45px); }
+// .information__block:nth-child(3) {
+//  -webkit-transform: translatex(45px);
+//  -ms-transform: translatex(45px);
+//  transform: translatex(45px); }
+
+
+
 	
 footer
 	display: block
@@ -140,6 +166,44 @@ footer
 		line-height: 15px
 	
 //About html
+
+.about_nav
+	backgroun-color: $aboutGrey
+
+
+=breadcrumb_item_style
+	font-family: Gotham
+	font-weight: 500
+	color: #555555
+	font-size: 12px
+	line-height: 30px	
+	text-transform: none
+
+.breadcrumb-item
+	+breadcrumb_item_style
+	.a--breadcrumb
+		+breadcrumb_item_style
+		&:hover
+			color: #555555
+			text-decoration: none	
+
+.breadcrumb>li+li:before
+	padding: 0 5px
+	color: #555555
+	content: "►"
+
+//a
+//	text-decoration: none
+//	text-transform: uppercase
+//	color: #ffffff
+//	font-family: Gotham
+//	font-weight: 300
+//	font-size: 14px
+//	line-height: 15px
+//	&:hover
+//		color: #ffffff
+//		text-decoration: none	
+	
 
 article.about h2
 	text-align: center
@@ -180,6 +244,33 @@ article.about h2
 	background: #ffffff
 	border: 1px solid #ffffff
 	border-radius: 20px
+
+.dropdown-menu 
+	overflow: 
+
+
+//.dropdown-menu 
+//	display: inline-block
+//	position: absolute
+//	top: 100%
+//	left: 0
+//	z-index: 1000
+//	display: none
+//	float: left
+//	//min-width: 160px
+//	padding: 5px 0
+//	margin: 2px 0 0
+//	font-size: 14px
+//	text-align: left
+//	list-style: none
+//	background-color: #fff
+//	//-webkit-background-clip: padding-box
+//	background-clip: padding-box
+//	border: 1px solid #ccc
+//	border: 1px solid rgba(0,0,0,.15)
+//	border-radius: 4px
+//	//-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175)
+//	box-shadow: 0 6px 12px rgba(0,0,0,.175)
   
 	
 @media all and (max-width:767px)
@@ -195,10 +286,10 @@ article.about h2
     height: 430px
 	
 	
-//=margin_left($pixels)
+=margin_left($pixels)
 	margin-left: $pixels	
 
-//.test
+.test
 	+margin_left(300px)
 		
 	

@@ -107,10 +107,16 @@ main
 		top: 50%
 		transform: translatey(-50%)
 	
-		a.a-information_block
-			color: $Red
-			font-weight: bold
-			display: inline-block
+a.a-information_block
+	color: $Red
+	font-weight: bold
+	display: inline-block
+
+
+
+
+		
+		
 	
 //.information__blocks.container.row.col-lg-4.col-md-4.information__blocks__content:nth-child(2)
 //		border-right: 1px solid #e0e6ea
@@ -174,7 +180,7 @@ footer
 =breadcrumb_item_style
 	font-family: Gotham
 	font-weight: 500
-	color: #555555
+	color: $paragraphGrey
 	font-size: 12px
 	line-height: 30px	
 	text-transform: none
@@ -184,7 +190,7 @@ footer
 	.a--breadcrumb
 		+breadcrumb_item_style
 		&:hover
-			color: #555555
+			color: $paragraphGrey
 			text-decoration: none	
 
 .breadcrumb>li+li:before
@@ -205,7 +211,7 @@ footer
 //		text-decoration: none	
 	
 
-article.about h2
+article h2
 	text-align: center
 
 .about_pic
@@ -245,8 +251,30 @@ article.about h2
 	border: 1px solid #ffffff
 	border-radius: 20px
 
-.dropdown-menu 
-	overflow: 
+//SERVICES
+
+.services__row
+	border-top: 1px solid #e0e6ea
+	border-bottom: 1px solid #e0e6ea
+	h3:hover
+		color: $Red
+	
+	&:hover
+		
+		border-top: 1px solid $Red
+		border-bottom: 1px solid $Red
+	
+	
+
+
+a.a-information_block.services-arrow
+	
+	float: right
+	font-size: 24px
+	color: $Red
+	font-weight: bold
+	margin-top: 30%
+
 
 
 //.dropdown-menu 
@@ -274,23 +302,35 @@ article.about h2
   
 	
 @media all and (max-width:767px)
+	.header__logo img
+		display: none
+	
+	.header__logo
+	
 	.information
 		height: 560px	
 	main
 		height: 450px
 	section#hero
 		height: 600px;
+	.footer__logo
+		margin-left: 25vw
+	.footer__list
+		display: none
+	
 	
 @media all and (min-width:768px ) and (max-width:1024px)
 	.information 
     height: 430px
-	
-	
-=margin_left($pixels)
-	margin-left: $pixels	
 
-.test
-	+margin_left(300px)
+	
+	
+	
+//=margin_left($pixels)
+//	margin-left: $pixels	
+//
+//.test
+//	+margin_left(300px)
 		
 	
 		

@@ -11,7 +11,7 @@ mixin header
 							li
 								a(href="about.html") Apie mus  
 							li 
-								a(href="#") Paslaugos
+								a(href="services.html") Paslaugos
 							li
 								a(href="#") Informacija pacientams 
 							li 
@@ -54,9 +54,9 @@ mixin footer
 						.footer__list
 							ul.list-inline.text-right
 								li
-									a.a--footer(href="#") Apie mus  
+									a.a--footer(href="about.html") Apie mus  
 								li 
-									a.a--footer(href="#") Paslaugos
+									a.a--footer(href="services.html") Paslaugos
 								li
 									a.a--footer(href="#") Informacija pacientams 
 								li 
@@ -65,6 +65,16 @@ mixin footer
 									a.a--footer(href="#") Komanda 
 								li 
 									a.a--footer(href="#") Kontaktai
+									
+//Services
+mixin services__row(title, text, link)
+	.services__row
+		.row
+			.col-sm-10
+				h3 #{title}
+				p #{text}
+			.col-sm-2
+				a.a-information_block.services-arrow(href="#{link}", target='_blank') →	
 
 
 

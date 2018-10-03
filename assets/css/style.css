@@ -153,11 +153,13 @@ footer {
   content: "►"; }
 
 article h2 {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 20px; }
 
 .about__pic {
   height: 380px;
-  width: 365px; }
+  width: 365px;
+  margin-top: 10px; }
   .about__pic .about__pic__under {
     display: block;
     width: 320px;
@@ -191,32 +193,67 @@ article h2 {
         border-radius: 20px; }
 
 .services__row {
+  position: relative;
   border-top: 1px solid #e0e6ea;
-  border-bottom: 1px solid #e0e6ea; }
-  .services__row h3:hover {
-    color: #d71440; }
+  border-bottom: 1px solid #e0e6ea;
+  text-transform: none; }
   .services__row:hover {
     border-top: 1px solid #d71440;
-    border-bottom: 1px solid #d71440; }
+    border-bottom: 1px solid #d71440;
+    -webkit-box-shadow: 0px 0px 16px 10px #efefef;
+    box-shadow: 0px 0px 16px 10px #efefef;
+    -webkit-transform: scale(1.03, 1.03);
+    -ms-transform: scale(1.03, 1.03);
+    transform: scale(1.03, 1.03); }
+  .services__row:hover h3 {
+    color: #d71440; }
+
+.a--services {
+  text-transform: none; }
 
 a.a-information_block.services-arrow {
+  display: block;
   float: right;
   font-size: 24px;
   color: #d71440;
   font-weight: bold;
-  margin-top: 30%; }
+  text-align: center;
+  padding-top: 30%; }
+
+.inside__service__list ul {
+  list-style: none; }
+  .inside__service__list ul li {
+    padding: 25px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #eaeef1;
+    text-align: center; }
+
+.inside__service__list .inside__service__list > li:hover {
+  background-color: #d71440; }
 
 @media all and (max-width: 767px) {
+  .hero__content {
+    text-align: center; }
+    .hero__content h1 {
+      font-size: 18px;
+      line-height: 30px; }
   .header__logo img {
     display: none; }
+  .header__logo {
+    background-image: url(../images/burbulai.png); }
+  .about__content h2 {
+    font-size: 18px;
+    text-align: center; }
   .information {
     height: 560px; }
   main {
-    height: 450px; }
+    height: 500px;
+    background-image: none; }
   section#hero {
     height: 600px; }
   .footer__logo {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
   .footer__list {
     display: none; } }
 

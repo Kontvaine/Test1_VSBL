@@ -65,16 +65,18 @@ mixin footer
 									a.a--footer(href="#") Komanda 
 								li 
 									a.a--footer(href="#") Kontaktai
+
 									
-//Services
-mixin services__row(title, text, link)
+
+mixin services__row(service-title,service-intro,link) 
 	.services__row
 		.row
 			.col-sm-10
-				h3 #{title}
-				p #{text}
+				h3 #{service-title}
+				p #{service-intro}
 			.col-sm-2
 				a.a-information_block.services-arrow(href="#{link}", target='_blank') →	
-
+mixin single_service(service-name)
+	li #{service-name}
 
 

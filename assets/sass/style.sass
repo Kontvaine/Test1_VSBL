@@ -213,15 +213,18 @@ footer
 
 article h2
 	text-align: center
+	padding-bottom: 20px
 
 
 .about__pic
 	height: 380px
 	width: 365px
+	margin-top: 10px
 	
 	.about__pic__under
 		display: block	
 		width: 320px
+		
 		
 		background-color: #1bbbb3
 		position: relative
@@ -268,67 +271,78 @@ article h2
 //SERVICES
 
 .services__row
+
+	position: relative;
 	border-top: 1px solid #e0e6ea
 	border-bottom: 1px solid #e0e6ea
-	h3:hover
-		color: $Red
-	
-	&:hover
-		
+	text-transform: none
+	&:hover 
 		border-top: 1px solid $Red
 		border-bottom: 1px solid $Red
+		box-shadow: 0px 0px 16px 10px #efefef
+		transform: scale(1.03, 1.03)
+	&:hover h3
+		color: $Red
 	
+.a--services
+	text-transform: none
 	
-
 
 a.a-information_block.services-arrow
-	
+	display: block
 	float: right
 	font-size: 24px
 	color: $Red
 	font-weight: bold
-	margin-top: 30%
+	text-align: center
+	padding-top: 30%
 
 
 
-//.dropdown-menu 
-//	display: inline-block
-//	position: absolute
-//	top: 100%
-//	left: 0
-//	z-index: 1000
-//	display: none
-//	float: left
-//	//min-width: 160px
-//	padding: 5px 0
-//	margin: 2px 0 0
-//	font-size: 14px
-//	text-align: left
-//	list-style: none
-//	background-color: #fff
-//	//-webkit-background-clip: padding-box
-//	background-clip: padding-box
-//	border: 1px solid #ccc
-//	border: 1px solid rgba(0,0,0,.15)
-//	border-radius: 4px
-//	//-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175)
-//	box-shadow: 0 6px 12px rgba(0,0,0,.175)
+//Services inside
+
+.inside__service__list
+	ul
+		list-style: none
+
+		li
+			padding: 25px 20px
+			font-size: 14px
+			font-weight: bold
+			background-color: $aboutGrey
+			text-align: center
+	
+	.inside__service__list>li:hover
+		background-color: $Red
+	
+			
   
 	
 @media all and (max-width:767px)
+	.hero__content
+		text-align: center
+		h1
+			font-size: 18px
+			line-height: 30px
 	.header__logo img
 		display: none
-	
+		
 	.header__logo
+		background-image: url(../images/burbulai.png)
+	
+	.about__content h2
+			font-size: 18px
+			text-align: center	
 	
 	.information
 		height: 560px	
 	main
-		height: 450px
+		height: 500px
+		background-image: none
 	section#hero
 		height: 600px;
 	.footer__logo
-		margin-left: 25vw
+		margin-left: 15vw
 	.footer__list
 		display: none
 	
@@ -336,56 +350,6 @@ a.a-information_block.services-arrow
 @media all and (min-width:768px ) and (max-width:1024px)
 	.information 
     height: 430px
-
-	
-	
-	
-//=margin_left($pixels)
-//	margin-left: $pixels	
-//
-//.test
-//	+margin_left(300px)
-		
-	
-		
-	//kaip daryt su situo ul/li?
-//.li_footer
-//	padding: 10px
-
-//header a.header__logo {
-//    display: block;
-//    float: left;
-//}
-	
-
-
-//.information__block__content.p
-//	margin-left: 100px
-	
-
-//@font-face {
-//	font-family: 'Gotham Book';
-//	src: url('Gotham-BookItalic.eot');
-//	src: url('Gotham-BookItalic.eot?#iefix') format('embedded-opentype'),
-//		url('Gotham-BookItalic.woff') format('woff'),
-//		url('Gotham-BookItalic.ttf') format('truetype'),
-//		url('Gotham-BookItalic.svg#Gotham-BookItalic') format('svg');
-//	font-weight: normal;
-//	font-style: italic;
-//}
-//
-//@font-face {
-//	font-family: 'Gotham';
-//	src: url('Gotham-MediumItalic.eot');
-//	src: url('Gotham-MediumItalic.eot?#iefix') format('embedded-opentype'),
-//		url('Gotham-MediumItalic.woff') format('woff'),
-//		url('Gotham-MediumItalic.ttf') format('truetype'),
-//		url('Gotham-MediumItalic.svg#Gotham-MediumItalic') format('svg');
-//	font-weight: 500;
-//	font-style: italic;
-//}
-	
-		
 
 
 

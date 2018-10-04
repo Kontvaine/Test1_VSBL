@@ -154,7 +154,7 @@ footer {
 
 article h2 {
   text-align: center;
-  padding-bottom: 20px; }
+  padding-bottom: 10px; }
 
 .about__pic {
   height: 380px;
@@ -220,17 +220,29 @@ a.a-information_block.services-arrow {
   text-align: center;
   padding-top: 30%; }
 
-.inside__service__list ul {
-  list-style: none; }
-  .inside__service__list ul li {
-    padding: 25px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: #eaeef1;
-    text-align: center; }
+.inside__service__list {
+  -webkit-transform: translatey(-15%);
+  -ms-transform: translatey(-15%);
+  transform: translatey(-15%); }
+  .inside__service__list ul {
+    padding: 0;
+    list-style: none; }
+    .inside__service__list ul li {
+      border-top: solid 1px #d3dce2;
+      padding: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #eaeef1;
+      text-align: center; }
+      .inside__service__list ul li:last-child {
+        border-bottom: solid 1px #d3dce2; }
+      .inside__service__list ul li:hover {
+        background-color: #d71440; }
 
-.inside__service__list .inside__service__list > li:hover {
-  background-color: #d71440; }
+.about__text {
+  min-height: 800px; }
+  .about__text .hide {
+    display: none; }
 
 @media all and (max-width: 767px) {
   .hero__content {

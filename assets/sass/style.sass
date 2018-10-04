@@ -213,7 +213,7 @@ footer
 
 article h2
 	text-align: center
-	padding-bottom: 20px
+	padding-bottom: 10px
 
 
 .about__pic
@@ -302,20 +302,31 @@ a.a-information_block.services-arrow
 //Services inside
 
 .inside__service__list
+	transform: translatey(-15%)
 	ul
+		padding: 0
 		list-style: none
-
 		li
-			padding: 25px 20px
+			border-top: solid 1px #d3dce2
+			padding: 20px 
 			font-size: 14px
 			font-weight: bold
 			background-color: $aboutGrey
 			text-align: center
-	
-	.inside__service__list>li:hover
-		background-color: $Red
-	
-			
+			&:last-child 
+				border-bottom: solid 1px #d3dce2
+			&:hover
+				background-color: $Red 
+
+.about__text
+	min-height:: 800px
+
+	.hide
+		display: none
+
+
+
+//responsive	
   
 	
 @media all and (max-width:767px)
@@ -350,6 +361,9 @@ a.a-information_block.services-arrow
 @media all and (min-width:768px ) and (max-width:1024px)
 	.information 
     height: 430px
+	
+	
+
 
 
 

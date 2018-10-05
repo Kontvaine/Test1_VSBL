@@ -54,6 +54,13 @@ h2
 	line-height: 58px
 	color: $black
 
+=h2		
+	font-family: Gotham
+	font-weight: bold
+	font-size: 36px
+	line-height: 58px
+	color: $black
+
 h3
 	font-family: Gotham
 	font-weight: bold
@@ -173,8 +180,8 @@ footer
 	
 //About html
 
-.about_nav
-	backgroun-color: $aboutGrey
+section#breadcrumb-list
+	background-color: $aboutGrey
 
 
 =breadcrumb_item_style
@@ -193,65 +200,59 @@ footer
 			color: $paragraphGrey
 			text-decoration: none	
 
+.breadcrumb 
+	padding: 0
+	margin: 12px 0
+	background-color: transparent
+	
+
+	
 .breadcrumb>li+li:before
 	padding: 0 5px
 	color: #555555
 	content: "►"
 
-//a
-//	text-decoration: none
-//	text-transform: uppercase
-//	color: #ffffff
-//	font-family: Gotham
-//	font-weight: 300
-//	font-size: 14px
-//	line-height: 15px
-//	&:hover
-//		color: #ffffff
-//		text-decoration: none	
 	
 
-article h2
+section h1
+	+h2
 	text-align: center
 	padding-bottom: 10px
 
 
-.about__pic
+aside
 	height: 380px
 	width: 365px
 	margin-top: 10px
 	
-	.about__pic__under
+	blockquote
 		display: block	
-		width: 320px
-		
-		
+		width: 300px
 		background-color: #1bbbb3
 		position: relative
-		top: -20%
-		transform: translatex(8%)
+	
+		transform: translatey(-50%)
 		border: 1px solid #1bbbb3
 		border-radius: 3px
-		p	
-			margin-left: 25px
-			padding: 10px 15px
-			position: relative
-			font-weight: normal
-			font-style: italic
-			font-size: 16px
-			line-height: 30px
-			color: #ffffff
-			&:before
-				content: " "
-				margin: 15px -20px
-				position: absolute
-				top: 0
-				bottom: 0
-				width: 4px
-				height: 80px
-				background: #ffffff
-				border: 1px solid #ffffff
-				border-radius: 20px
+		margin: 0 auto
+		padding: 10px 15px
+		position: relative
+		font-weight: normal
+		font-style: italic
+		font-size: 16px
+		line-height: 30px
+		color: #ffffff
+		&:before
+			content: " "
+			margin: 15px -10px
+			position: absolute
+			top: 0
+			bottom: 0
+			width: 4px
+			height: 80px
+			background: #ffffff
+			border: 1px solid #ffffff
+			border-radius: 20px
 
 	
 		
@@ -270,32 +271,39 @@ article h2
 
 //SERVICES
 
-.services__row
 
+#services.container
+	
+	
+	
+.a--services__row
+	text-transform: none
 	position: relative;
+	display: block
 	border-top: 1px solid #e0e6ea
 	border-bottom: 1px solid #e0e6ea
-	text-transform: none
+
+
 	&:hover 
 		border-top: 1px solid $Red
 		border-bottom: 1px solid $Red
 		box-shadow: 0px 0px 16px 10px #efefef
-		transform: scale(1.03, 1.03)
+		padding: 0 30px
+		//transform: scale(1.03, 1.03)
 	&:hover h3
 		color: $Red
+.a--services__row p
+		width: 80%
+		
 	
-.a--services
-	text-transform: none
-	
-
-a.a-information_block.services-arrow
+.services-arrow
 	display: block
 	float: right
 	font-size: 24px
 	color: $Red
 	font-weight: bold
 	text-align: center
-	padding-top: 30%
+
 
 
 
@@ -319,7 +327,7 @@ a.a-information_block.services-arrow
 				background-color: $Red 
 
 .about__text
-	min-height:: 800px
+	min-height: 800px
 
 	.hide
 		display: none

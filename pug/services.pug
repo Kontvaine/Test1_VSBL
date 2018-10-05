@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+	head
+
+	title Kompetencijos centras
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width", initial-scale=1) 
+
+	link(rel="stylesheet", href="../assets/css/bootstrap.min.css")
+	link(rel="stylesheet", href="../assets/css/bootstrap-theme.min.css")
+	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
+	link(rel="stylesheet", href="../assets/css/style.css")
+	link(rel="stylesheet", href="../assets/fonts/stylesheet.css")
+	include includes/mixins.pug	
+
+	body
+		+header
+
+
+
+		section#breadcrumb-list
+			.container--full
+				.container
+
+					ul.breadcrumb
+						li.breadcrumb-item
+							a.a--breadcrumb(href='index.html') Pagrindinis
+						li.breadcrumb-item
+							a.a--breadcrumb(href='services.html') Paslaugos
+						li.breadcrumb-item(aria-current='page') Paslauga
+
+		section#services
+			.container
+				.row
+					.col-sm-12
+						h1 Paslaugos
+			.container
+				.row
+					.col-sm-12
+						a.a--services__row(href="services-inside.html")
+
+							h3 Paslauga 1
+							p Donec vel vulputate lorem. Sed convallis a nulla eget auctor. Maecenas ut egestas justo. Cras egestas mauris eu ex blandit, sollicitudin suscipit lectus lobortis. Integer id laoreet lectus. Nunc lobortis auctor ligula, quis ullamcorper augue finibus et.
+							.services-arrow →	
+
+
+
+		+footer
+		include includes/js.pug
+						

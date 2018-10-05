@@ -233,7 +233,7 @@ aside
 	
 	blockquote
 		display: block	
-		width: 300px
+		width: calc(100% - 50px) 
 		background-color: #1bbbb3
 		position: relative
 	
@@ -255,7 +255,7 @@ aside
 			top: 0
 			bottom: 0
 			width: 4px
-			height: 80px
+			//height: 80px
 			background: #ffffff
 			border: 1px solid #ffffff
 			border-radius: 20px
@@ -278,17 +278,15 @@ aside
 //SERVICES
 
 
-#services.container
-	
-	
 	
 .a--services__row
+	justify-content: space-between;	
 	text-transform: none
-	position: relative;
+	//position: relative;
+	height: 140px
 	display: block
 	border-top: 1px solid #e0e6ea
 	border-bottom: 1px solid #e0e6ea
-
 
 	&:hover 
 		border-top: 1px solid $Red
@@ -298,17 +296,39 @@ aside
 		//transform: scale(1.03, 1.03)
 	&:hover h3
 		color: $Red
-.a--services__row p
+	.services-arrow
+		display: block
+		margin-top: auto
+		margin-bottom: auto
+
+.flex
+	display: flex
+	flex-wrap: wrap;	
+	.services__row__content
 		width: 80%
-		
+
+
+//.services__row__content:last-child
+//	margin-bottom: 20px
 	
-.services-arrow
-	display: block
-	float: right
-	font-size: 24px
-	color: $Red
-	font-weight: bold
-	text-align: center
+	
+//section#services .a--services__row:last-child
+//	margin-bottom: 50px
+
+
+	
+
+
+main
+	background-color: #eaeef1	
+	background-image: url(../images/burbulai.png) 
+	background-repeat: no-repeat
+	background-position: 17% center
+	height: 400px
+	.about__content
+		position: relative
+		top: 50%
+		transform: translatey(-50%)
 
 
 

@@ -34,14 +34,24 @@ html(lang="en")
 				.row
 					.col-sm-12
 						h1 Paslaugos
+						
 			.container
 				.row
 					.col-sm-12
-						a.a--services__row(href="services-inside.html")
+						a.a--services__row.flex(href='services-inside.html')
+							.services__row__content
+								h3 Paslauga test
+								p Donec test vel vulputate lorem. Sed convallis a nulla eget auctor. Maecenas ut egestas justo. Cras egestas mauris eu ex blandit, sollicitudin suscipit lectus lobortis. Integer id laoreet lectus. Nunc lobortis auctor ligula, quis ullamcorper augue finibus et.
+							.services-arrow 
+								img(src='../assets/images/arrow.png', alt='arrow')
+			//mixin services(link, title, intro)
+			+services("#", "Paslauga DU", "Donec DU vel vulputate lorem. Sed convallis a nulla eget auctor. Maecenas ut egestas justo. Cras egestas mauris eu ex blandit, sollicitudin suscipit lectus lobortis. Integer id laoreet lectus. Nunc lobortis auctor ligula, quis ullamcorper augue finibus et.")
+			+services("#", "Paslauga TRYS", "Donec TRYS vel vulputate lorem. Sed convallis a nulla eget auctor. Maecenas ut egestas justo. Cras egestas mauris eu ex blandit, sollicitudin suscipit lectus lobortis. Integer id laoreet lectus. Nunc lobortis auctor ligula, quis ullamcorper augue finibus et.")
+			+services("#", "Paslauga test", "Donec test vel vulputate lorem. Sed convallis a nulla eget auctor. Maecenas ut egestas justo. Cras egestas mauris eu ex blandit, sollicitudin suscipit lectus lobortis. Integer id laoreet lectus. Nunc lobortis auctor ligula, quis ullamcorper augue finibus et.")
+			+services("#", "Paslauga DU", "Donec DU vel vulputate lorem. Sed convallis a nulla eget auctor. Maecenas ut egestas justo. Cras egestas mauris eu ex blandit, sollicitudin suscipit lectus lobortis. Integer id laoreet lectus. Nunc lobortis auctor ligula, quis ullamcorper augue finibus et.")
+			+services("#", "Paslauga TRYS", "Donec TRYS vel vulputate lorem. Sed convallis a nulla eget auctor. Maecenas ut egestas justo. Cras egestas mauris eu ex blandit, sollicitudin suscipit lectus lobortis. Integer id laoreet lectus. Nunc lobortis auctor ligula, quis ullamcorper augue finibus et.")
 
-							h3 Paslauga 1
-							p Donec vel vulputate lorem. Sed convallis a nulla eget auctor. Maecenas ut egestas justo. Cras egestas mauris eu ex blandit, sollicitudin suscipit lectus lobortis. Integer id laoreet lectus. Nunc lobortis auctor ligula, quis ullamcorper augue finibus et.
-							.services-arrow →	
+
 
 
 

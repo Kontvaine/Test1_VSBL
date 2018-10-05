@@ -39,7 +39,7 @@ mixin header
 mixin information_blocks(title, text, link, link_headline)
 	h3 #{title}
 	p #{text}
-	a.a-information_block(href="#{link}", target='_blank') #{link_headline}   
+	a.a-information_block(href='#{link}' target='_blank') #{link_headline}   
 		i.fas.fa-arrow-right
 		
 		
@@ -67,16 +67,15 @@ mixin footer
 									a.a--footer(href="#") Kontaktai
 
 									
-
-mixin services__row(service-title,service-intro,link) 
-	.services__row
+mixin services(link, title, intro)
+	.container
 		.row
-			.col-sm-10
-				h3 #{service-title}
-				p #{service-intro}
-			.col-sm-2
-				a.a-information_block.services-arrow(href="#{link}", target='_blank') →	
-mixin single_service(service-name)
-	li #{service-name}
+			.col-sm-12
+				a.a--services__row.flex(href='#{link}')
+					.services__row__content
+						h3 #{title}
+						p #{intro}
+					.services-arrow 
+						img(src='../assets/images/arrow.png', alt='arrow')
 
 

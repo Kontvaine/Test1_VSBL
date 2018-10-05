@@ -181,7 +181,7 @@ aside {
   margin-top: 10px; }
   aside blockquote {
     display: block;
-    width: 300px;
+    width: calc(100% - 50px);
     background-color: #1bbbb3;
     position: relative;
     -webkit-transform: translatey(-50%);
@@ -204,14 +204,16 @@ aside {
       top: 0;
       bottom: 0;
       width: 4px;
-      height: 80px;
       background: #ffffff;
       border: 1px solid #ffffff;
       border-radius: 20px; }
 
 .a--services__row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-transform: none;
-  position: relative;
+  height: 140px;
   display: block;
   border-top: 1px solid #e0e6ea;
   border-bottom: 1px solid #e0e6ea; }
@@ -222,17 +224,32 @@ aside {
     box-shadow: 0px 0px 16px 10px #efefef; }
   .a--services__row:hover h3 {
     color: #d71440; }
+  .a--services__row .services-arrow {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto; }
 
-.a--services__row p {
-  width: 80%; }
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .flex .services__row__content {
+    width: 80%; }
 
-.services-arrow {
-  display: block;
-  float: right;
-  font-size: 24px;
-  color: #d71440;
-  font-weight: bold;
-  text-align: center; }
+main {
+  background-color: #eaeef1;
+  background-image: url(../images/burbulai.png);
+  background-repeat: no-repeat;
+  background-position: 17% center;
+  height: 400px; }
+  main .about__content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    transform: translatey(-50%); }
 
 .inside__service__list {
   -webkit-transform: translatey(-15%);

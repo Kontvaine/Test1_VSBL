@@ -1,11 +1,51 @@
 doctype html
 html(lang="en")
-	include includes/head.pug
-		
+	head
+
+	title Kompetencijos centras
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width", initial-scale=1) 
+
+	link(rel="stylesheet", href="../assets/css/bootstrap.min.css")
+	link(rel="stylesheet", href="../assets/css/bootstrap-theme.min.css")
+	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
+	link(rel="stylesheet", href="../assets/css/style.css")
+	link(rel="stylesheet", href="../assets/fonts/stylesheet.css")
+	include includes/mixins.pug	
+	include includes/mixins.pug
 		
 	body
 
 		+header
+		
+		section#breadcrumb-list
+			.container--full
+				.container
+
+					ul.breadcrumb
+						li.breadcrumb-item
+							a.a--breadcrumb(href='index.html') Pagrindinis
+						li.breadcrumb-item(aria-current='page') 
+							span Mokslas
+							
+		section#science
+			.container
+				.row
+					.col-md-12
+						h1 Mokslas
+				.row
+					.col-md-8.col-md-offset-2
+						article
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus.
+				.row
+					.col-md-5.projects
+						h3 Projektai
+						p Test test Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus.
+						a peržiūrėti projektą	
+					.col-md-5.col-md-offset-2.publications
+						h3 Publikacijos
+						p Test test Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus.
+						a peržiūrėti projektą		
 		
 		
 		

@@ -1,6 +1,5 @@
 $navColor: #05afa6
 $hero: #1bbbb3
-$hero: #1bbbb3
 $Red: #d71440
 $black: #000000
 $paragraphGrey: #555555
@@ -40,12 +39,14 @@ a
 		color: #ffffff
 		text-decoration: none
 
-#hero h1
+h1
 	font-family: Gotham
 	font-weight: 300
 	font-size: 48px
 	line-height: 58px
 	color: #ffffff
+	margin-top: 40px
+	
 
 h2		
 	font-family: Gotham
@@ -94,7 +95,7 @@ section#hero
 			margin-top: 40px
 			background-color: $Red
 			display: inline-block
-
+	
 main
 	background-color: #eaeef1	
 	background-image: url(../images/burbulai.png) 
@@ -104,7 +105,7 @@ main
 	.about__content
 		position: relative
 		top: 50%
-		transform: translatey(-50%)
+		transform: translatey(-50%)	
 	
 .information
 	
@@ -119,41 +120,6 @@ a.a-information_block
 	font-weight: bold
 	display: inline-block
 
-
-
-
-		
-		
-	
-//.information__blocks.container.row.col-lg-4.col-md-4.information__blocks__content:nth-child(2)
-//		border-right: 1px solid #e0e6ea
-//		border-left: 1px solid #e0e6ea
-
-
-
-
-//.aside
-//	transform: translatex(45px)
-	
-
-
-
-
-//.information__block {
-//.information {
-//  height: 360px; }
-//  .information__block:nth-child(2) {
-//    -webkit-transform: translatex(45px);
-//    -ms-transform: translatex(45px);
-//    transform: translatex(45px); }
-// .information__block:nth-child(3) {
-//  -webkit-transform: translatex(45px);
-//  -ms-transform: translatex(45px);
-//  transform: translatex(45px); }
-
-
-
-	
 footer
 	display: block
 	border-top: 1px solid #e0e6ea
@@ -205,8 +171,6 @@ section#breadcrumb-list
 	margin: 12px 0
 	background-color: transparent
 	
-
-	
 .breadcrumb>li+li:before
 	padding: 0 5px
 	color: #555555
@@ -214,48 +178,52 @@ section#breadcrumb-list
 
 	
 
-#services h1
-	+h2
-	text-align: center
-	padding-bottom: 10px
+
 
 #about-page h1
 	+h2
 	text-align: center
 	padding-bottom: 10px
 
-
+#about-page article
+	margin-bottom: 50px
 
 aside
 	height: 380px
 	width: 365px
 	margin-top: 10px
 	
+	
 	blockquote
 		display: block	
-		width: calc(100% - 50px) 
+		width: calc(100% - 55px) 
 		background-color: #1bbbb3
 		position: relative
-	
 		transform: translatey(-50%)
 		border: 1px solid #1bbbb3
 		border-radius: 3px
 		margin: 0 auto
-		padding: 10px 15px
+		padding-left: 25px
 		position: relative
+		font-family: Gotham book
 		font-weight: normal
 		font-style: italic
 		font-size: 16px
 		line-height: 30px
 		color: #ffffff
+		background-image: url('../images/quot_03.png')
+		background-repeat: no-repeat
+		//background-size: 50px 40px
+		background-position: top 10px right 30px
+		
+		
 		&:before
 			content: " "
-			margin: 15px -10px
+			margin: 15px -15px
 			position: absolute
 			top: 0
 			bottom: 0
 			width: 4px
-			//height: 80px
 			background: #ffffff
 			border: 1px solid #ffffff
 			border-radius: 20px
@@ -277,7 +245,10 @@ aside
 
 //SERVICES
 
-
+#services h1
+	+h2
+	text-align: center
+	padding-bottom: 10px
 	
 .a--services__row
 	justify-content: space-between;	
@@ -308,14 +279,6 @@ aside
 		width: 80%
 
 
-//.services__row__content:last-child
-//	margin-bottom: 20px
-	
-	
-//section#services .a--services__row:last-child
-//	margin-bottom: 50px
-
-
 	
 
 
@@ -335,6 +298,12 @@ main
 
 //Services inside
 
+#inside__service h1
+	+h2
+	//text-align: center
+	padding-bottom: 10px
+	
+	
 .inside__service__list
 	transform: translatey(-15%)
 	ul
@@ -352,14 +321,29 @@ main
 			&:hover
 				background-color: $Red 
 
-.ilgis
-	min-height: 700px
+=custom-heigth($min-height-px)
+	min-height: $min-height-px
 
-	.hide
+.custom
+	+custom-heigth(700px)
+
+//.hide
 		display: none
+	
+//SCIENCE
+#science h1
+	+h2
+	text-align: center
 
+#science article p
+	text-align: center
 
-
+.projects
+	background-color: $hero
+	
+.publications
+	background-color: $Red
+	
 //responsive	
   
 	

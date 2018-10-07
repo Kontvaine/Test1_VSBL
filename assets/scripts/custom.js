@@ -8,7 +8,7 @@ $(document).ready(function(){
 	
 	
 	
-	  $(".inside__service__list li").click(function(){
+	  $("nav li").click(function(){
         
         
     console.log($(this).attr('id'));

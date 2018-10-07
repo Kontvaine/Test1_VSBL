@@ -193,8 +193,7 @@ section#breadcrumb-list
 
 #about-page article
 	margin-bottom: 50px
-
-aside
+	aside
 	height: 380px
 	width: 365px
 	margin-top: 10px
@@ -251,6 +250,10 @@ aside
 
 //SERVICES
 
+
+
+
+
 #services h1
 	+h2
 	text-align: center
@@ -285,19 +288,6 @@ aside
 		width: 80%
 
 
-main
-	background-color: #eaeef1	
-	background-image: url(../images/burbulai.png) 
-	background-repeat: no-repeat
-	background-position: 17% center
-	height: 400px
-	.about__content
-		position: relative
-		top: 50%
-		transform: translatey(-50%)
-
-
-
 
 //Services inside
 
@@ -306,39 +296,61 @@ main
 	//text-align: center
 	padding-bottom: 10px
 	
+.a--service-btn
+	text-transform: none
+	color: #000000
+	font-weight: 500
+	//line-height: 60px
 	
-.inside__service__list
-	transform: translatey(-15%)
+
+#inside__service nav
+	transform: translatey(-17%)
 	ul
 		padding: 0
 		list-style: none
 		li
 			border-top: solid 1px #d3dce2
 			padding: 20px 
-			font-size: 14px
-			font-weight: bold
 			background-color: $aboutGrey
-			text-align: center
+			//&:after
+				content: " "
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 10px 0 10px 10px
+				border-color: transparent transparent transparent $Red
 			&:last-child 
 				border-bottom: solid 1px #d3dce2
 			&:hover
 				background-color: $Red 
 
+
+				
+
+
+.triangle
+	content: " "
+	width: 0
+	height: 0
+	border-style: solid
+	border-width: 10px 0 10px 10px
+	border-color: transparent transparent transparent $Red
+		
 =custom-heigth($min-height-px)
 	min-height: $min-height-px
 
 .custom
 	+custom-heigth(700px)
 
-//.hide
-		display: none
+.from-top
+	padding-top: 60px
 	
 //SCIENCE
 #science h1
 	+h2
 	text-align: center
 
-#science article p
+#science sub p
 	text-align: center
 
 .h2--science
@@ -363,14 +375,18 @@ main
 	
 .projects
 	+science-columns($hero)
-	//.sitas
-		position: relative
-		top: 50%
-		transform: translatey(-50%)
+	background-image: url('../images/mikro.png')
+	background-repeat: no-repeat
+		//background-size: 50px 40px
+	background-position: top 75px right 50px
 
 	
 .publications
 	+science-columns($Red)
+	background-image: url('../images/dnr.png')
+	background-repeat: no-repeat
+		//background-size: 50px 40px
+	background-position: top 75px right 13px
 	
 //responsive	
   

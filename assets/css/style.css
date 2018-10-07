@@ -172,13 +172,11 @@ section#breadcrumb-list {
   padding-bottom: 10px; }
 
 #about-page article {
-  margin-bottom: 50px; }
-
-aside {
+  margin-bottom: 50px;
   height: 380px;
   width: 365px;
   margin-top: 10px; }
-  aside blockquote {
+  #about-page article blockquote {
     display: block;
     width: calc(100% - 55px);
     background-color: #1bbbb3;
@@ -200,7 +198,7 @@ aside {
     background-image: url("../images/quot_03.png");
     background-repeat: no-repeat;
     background-position: top 10px right 30px; }
-    aside blockquote:before {
+    #about-page article blockquote:before {
       content: " ";
       margin: 15px -15px;
       position: absolute;
@@ -250,19 +248,6 @@ aside {
   .flex .services__row__content {
     width: 80%; }
 
-main {
-  background-color: #eaeef1;
-  background-image: url(../images/burbulai.png);
-  background-repeat: no-repeat;
-  background-position: 17% center;
-  height: 400px; }
-  main .about__content {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translatey(-50%);
-    -ms-transform: translatey(-50%);
-    transform: translatey(-50%); }
-
 #inside__service h1 {
   font-family: Gotham;
   font-weight: bold;
@@ -271,27 +256,40 @@ main {
   color: #000000;
   padding-bottom: 10px; }
 
-.inside__service__list {
-  -webkit-transform: translatey(-15%);
-  -ms-transform: translatey(-15%);
-  transform: translatey(-15%); }
-  .inside__service__list ul {
+.a--service-btn {
+  text-transform: none;
+  color: #000000;
+  font-weight: 500; }
+
+#inside__service nav {
+  -webkit-transform: translatey(-17%);
+  -ms-transform: translatey(-17%);
+  transform: translatey(-17%); }
+  #inside__service nav ul {
     padding: 0;
     list-style: none; }
-    .inside__service__list ul li {
+    #inside__service nav ul li {
       border-top: solid 1px #d3dce2;
       padding: 20px;
-      font-size: 14px;
-      font-weight: bold;
-      background-color: #eaeef1;
-      text-align: center; }
-      .inside__service__list ul li:last-child {
+      background-color: #eaeef1; }
+      #inside__service nav ul li:last-child {
         border-bottom: solid 1px #d3dce2; }
-      .inside__service__list ul li:hover {
+      #inside__service nav ul li:hover {
         background-color: #d71440; }
+
+.triangle {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #d71440; }
 
 .custom {
   min-height: 700px; }
+
+.from-top {
+  padding-top: 60px; }
 
 #science h1 {
   font-family: Gotham;
@@ -301,7 +299,7 @@ main {
   color: #000000;
   text-align: center; }
 
-#science article p {
+#science sub p {
   text-align: center; }
 
 .h2--science {
@@ -312,7 +310,10 @@ main {
   height: 300px;
   background-color: #1bbbb3;
   padding: 0 50px 0 40px;
-  margin: 40px 0 50px 0; }
+  margin: 40px 0 50px 0;
+  background-image: url("../images/mikro.png");
+  background-repeat: no-repeat;
+  background-position: top 75px right 50px; }
   .projects p {
     color: #ffffff; }
   .projects .a--btn-science {
@@ -327,7 +328,10 @@ main {
   height: 300px;
   background-color: #d71440;
   padding: 0 50px 0 40px;
-  margin: 40px 0 50px 0; }
+  margin: 40px 0 50px 0;
+  background-image: url("../images/dnr.png");
+  background-repeat: no-repeat;
+  background-position: top 75px right 13px; }
   .publications p {
     color: #ffffff; }
   .publications .a--btn-science {

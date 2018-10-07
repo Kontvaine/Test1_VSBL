@@ -39,6 +39,8 @@ a
 		color: #ffffff
 		text-decoration: none
 
+
+
 h1
 	font-family: Gotham
 	font-weight: 300
@@ -55,6 +57,10 @@ h2
 	line-height: 58px
 	color: $black
 
+.h2--science
+	font-size: 24px
+	color: #ffffff
+
 =h2		
 	font-family: Gotham
 	font-weight: bold
@@ -70,7 +76,7 @@ h3
 
 p
 	font-family: Gotham book
-	font-weight: bold
+	font-weight: 300
 	font-size: 14px
 	line-height: 30px
 	color: $paragraphGrey
@@ -279,9 +285,6 @@ aside
 		width: 80%
 
 
-	
-
-
 main
 	background-color: #eaeef1	
 	background-image: url(../images/burbulai.png) 
@@ -338,11 +341,36 @@ main
 #science article p
 	text-align: center
 
+.h2--science
+	font-size: 24px
+	color: #ffffff
+
+=science-columns($color)
+	height: 300px
+	background-color: $color
+	padding: 0 50px 0 40px
+	margin: 40px 0 50px 0
+	
+	p	
+		color: #ffffff 
+	.a--btn-science
+		display: inline-block
+		color: #000000
+		line-height: 55px
+		padding: 0 18px
+		background-color: #ffffff 
+		text-align: center
+	
 .projects
-	background-color: $hero
+	+science-columns($hero)
+	//.sitas
+		position: relative
+		top: 50%
+		transform: translatey(-50%)
+
 	
 .publications
-	background-color: $Red
+	+science-columns($Red)
 	
 //responsive	
   

@@ -45,6 +45,10 @@ h2 {
   line-height: 58px;
   color: #000000; }
 
+.h2--science {
+  font-size: 24px;
+  color: #ffffff; }
+
 h3 {
   font-family: Gotham;
   font-weight: bold;
@@ -53,7 +57,7 @@ h3 {
 
 p {
   font-family: Gotham book;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 14px;
   line-height: 30px;
   color: #555555; }
@@ -300,11 +304,39 @@ main {
 #science article p {
   text-align: center; }
 
+.h2--science {
+  font-size: 24px;
+  color: #ffffff; }
+
 .projects {
-  background-color: #1bbbb3; }
+  height: 300px;
+  background-color: #1bbbb3;
+  padding: 0 50px 0 40px;
+  margin: 40px 0 50px 0; }
+  .projects p {
+    color: #ffffff; }
+  .projects .a--btn-science {
+    display: inline-block;
+    color: #000000;
+    line-height: 55px;
+    padding: 0 18px;
+    background-color: #ffffff;
+    text-align: center; }
 
 .publications {
-  background-color: #d71440; }
+  height: 300px;
+  background-color: #d71440;
+  padding: 0 50px 0 40px;
+  margin: 40px 0 50px 0; }
+  .publications p {
+    color: #ffffff; }
+  .publications .a--btn-science {
+    display: inline-block;
+    color: #000000;
+    line-height: 55px;
+    padding: 0 18px;
+    background-color: #ffffff;
+    text-align: center; }
 
 @media all and (max-width: 767px) {
   .hero__content {

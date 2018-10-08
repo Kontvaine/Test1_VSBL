@@ -65,8 +65,8 @@ mixin footer
 									a.a--footer(href="#") Komanda 
 								li 
 									a.a--footer(href="#") Kontaktai
-
 									
+
 mixin services(link, title, intro)
 	.container
 		.row
@@ -77,5 +77,24 @@ mixin services(link, title, intro)
 						p #{intro}
 					.services-arrow 
 						img(src='../assets/images/arrow.png', alt='arrow')
+						
+
+mixin project(projectTitle, logoSrc, projectIntro)
+	.col-md-6
+		.col-md-12.project__box
+			.name-logo.flex
+				h2.h2--projects #{projectTitle}
+				img(src='#{logoSrc}', alt='logo project')
+			p #{projectIntro}
+			a.a--btn-project(href="#") peržiūrėti projektą	
+
+mixin project2(projectTitle, projectIntro)
+	.col-md-6
+		.col-md-12.project__box
+			.name-logo.flex
+				h2.h2--projects #{projectTitle}
+				img(src='../assets/images/kitas_logo.png', alt='logo project')
+			p #{projectIntro}
+			a.a--btn-project(href="#") peržiūrėti projektą
 
 

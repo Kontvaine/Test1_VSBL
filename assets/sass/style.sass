@@ -4,6 +4,7 @@ $Red: #d71440
 $black: #000000
 $paragraphGrey: #555555
 $aboutGrey: #eaeef1
+$borderGrey: #e0e6ea
 
 .container--full
 	width: 100%
@@ -57,9 +58,10 @@ h2
 	line-height: 58px
 	color: $black
 
-.h2--science
-	font-size: 24px
-	color: #ffffff
+
+
+
+
 
 =h2		
 	font-family: Gotham
@@ -128,7 +130,7 @@ a.a-information_block
 
 footer
 	display: block
-	border-top: 1px solid #e0e6ea
+	border-top: 1px solid $borderGrey
 	
 	a.footer__logo
 		display: block
@@ -193,45 +195,44 @@ section#breadcrumb-list
 
 #about-page article
 	margin-bottom: 50px
-	aside
 	height: 380px
 	width: 365px
 	margin-top: 10px
 	
 	
-	blockquote
-		display: block	
-		width: calc(100% - 55px) 
-		background-color: #1bbbb3
-		position: relative
-		transform: translatey(-50%)
-		border: 1px solid #1bbbb3
-		border-radius: 3px
-		margin: 0 auto
-		padding-left: 25px
-		position: relative
-		font-family: Gotham book
-		font-weight: normal
-		font-style: italic
-		font-size: 16px
-		line-height: 30px
-		color: #ffffff
-		background-image: url('../images/quot_03.png')
-		background-repeat: no-repeat
-		//background-size: 50px 40px
-		background-position: top 10px right 30px
-		
-		
-		&:before
-			content: " "
-			margin: 15px -15px
-			position: absolute
-			top: 0
-			bottom: 0
-			width: 4px
-			background: #ffffff
-			border: 1px solid #ffffff
-			border-radius: 20px
+blockquote
+	display: block	
+	width: calc(100% - 55px) 
+	background-color: #1bbbb3
+	position: relative
+	transform: translatey(-50%)
+	border: 1px solid #1bbbb3
+	border-radius: 3px
+	margin: 0 auto
+	padding-left: 25px
+	position: relative
+	font-family: Gotham book
+	font-weight: normal
+	font-style: italic
+	font-size: 16px
+	line-height: 30px
+	color: #ffffff
+	background-image: url('../images/quot_03.png')
+	background-repeat: no-repeat
+	//background-size: 50px 40px
+	background-position: top 10px right 30px
+
+
+	&:before
+		content: " "
+		margin: 15px -15px
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 4px
+		background: #ffffff
+		border: 1px solid #ffffff
+		border-radius: 20px
 
 	
 		
@@ -260,13 +261,13 @@ section#breadcrumb-list
 	padding-bottom: 10px
 	
 .a--services__row
-	justify-content: space-between;	
+	justify-content: space-between
 	text-transform: none
 	//position: relative;
 	height: 140px
 	display: block
-	border-top: 1px solid #e0e6ea
-	border-bottom: 1px solid #e0e6ea
+	border-top: 1px solid $borderGrey
+	border-bottom: 1px solid $borderGrey
 
 	&:hover 
 		border-top: 1px solid $Red
@@ -321,13 +322,12 @@ section#breadcrumb-list
 				border-color: transparent transparent transparent $Red
 			&:last-child 
 				border-bottom: solid 1px #d3dce2
-			&:hover
+			&:hover .a--service-btn
+				color: #ffffff
+			&:hover 
 				background-color: $Red 
-
-
+		
 				
-
-
 .triangle
 	content: " "
 	width: 0
@@ -356,6 +356,8 @@ section#breadcrumb-list
 .h2--science
 	font-size: 24px
 	color: #ffffff
+	margin: 0
+
 
 =science-columns($color)
 	height: 300px
@@ -387,6 +389,53 @@ section#breadcrumb-list
 	background-repeat: no-repeat
 		//background-size: 50px 40px
 	background-position: top 75px right 13px
+
+.content
+	position: relative
+	top: 50%
+	transform: translatey(-50%)
+	
+
+//Projects
+
+
+#projects 
+	h1
+		+h2
+		text-align: center
+	.projects_row
+		margin-top: 35px
+	.h2--projects
+		font-size: 24px
+		line-height: 30px
+		margin-top: 30px
+	
+	.project__box
+		
+		height: 275px
+		border: 1px solid $borderGrey
+		.name-logo
+			justify-content: space-between
+			//position: relative
+			//top: 50%
+			//transform: translatey(-50%)
+			img 
+				margin-top: 30px
+				height: 30px
+				
+	
+a.a--btn-project
+	display: inline-block
+	font-size: 14px
+	//line-height: 60px
+	padding: 20px 20px
+	//margin-bottom: 30px
+	background-color: $Red
+	box-shadow: 0px 0px 16px 10px #f1f1f1
+	
+
+
+			
 	
 //responsive	
   

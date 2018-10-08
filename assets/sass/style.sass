@@ -42,13 +42,14 @@ a
 
 
 
-h1
+#hero h1
 	font-family: Gotham
 	font-weight: 300
 	font-size: 48px
 	line-height: 58px
 	color: #ffffff
 	margin-top: 40px
+	text-align: left
 	
 
 h2		
@@ -417,63 +418,65 @@ a.a--btn-project
 .publications__box
   border: 1px solid $borderGrey
 .number
-	font-size: 0px
+	display: inline-block
+	font-size: 16px
 	font-family: Gotham
 	font-weight: 500
 	color: #ffffff
-	padding: 10px 20px
+	height: 30px
+	width: 30px
+	padding: 4px 11px
 	background-color: $hero
 	
 			
 	
 .publications__box	
 	height: 115px
+	margin-bottom: 30px
 	
 
-
-
-//.p--publications 
+.p--publications 
+	margin-left: 60px
+	margin-right: 25px
 	position: relative
 	top: 50%
-	transform: translatey(-50%)
-
-.p--publications 			
-	margin-left: 55px
-	margin-right: 25px
+	transform: translatey(-85%)
+//	width: 90%
+	
 
 	
 @media all and (max-width:767px)
-.hero__content
-	text-align: center
-	h1
-		font-size: 18px
-		line-height: 30px
-.header__logo img
-	display: none
+	.hero__content
+		text-align: center
+		#hero h1
+			font-size: 18px
+			line-height: 30px
+	.header__logo img
+		display: none
 
-.header__logo
-	background-image: url(../images/burbulai.png)
+	.header__logo
+		background-image: url(../images/burbulai.png)
 
-.about__content h2
-		font-size: 18px
-		text-align: center	
+	.about__content h2
+			font-size: 18px
+			text-align: center	
 
-.information
-	height: 560px	
-main
-	height: 500px
-	background-image: none
-section#hero
-	height: 600px;
-.footer__logo
-	margin-left: 15vw
-.footer__list
-	display: none
+	.information
+		height: 560px	
+	main
+		height: 500px
+		background-image: none
+	section#hero
+		height: 600px;
+	.footer__logo
+		margin-left: 15vw
+	.footer__list
+		display: none
 
 
 @media all and (min-width:768px ) and (max-width:1024px)
-.information 
-	height: 430px
+	.information 
+		height: 430px
 
 	
 

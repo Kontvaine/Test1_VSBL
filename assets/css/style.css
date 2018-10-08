@@ -30,13 +30,14 @@ a {
     color: #ffffff;
     text-decoration: none; }
 
-h1 {
+#hero h1 {
   font-family: Gotham;
   font-weight: 300;
   font-size: 48px;
   line-height: 58px;
   color: #ffffff;
-  margin-top: 40px; }
+  margin-top: 40px;
+  text-align: left; }
 
 h2 {
   font-family: Gotham;
@@ -370,51 +371,54 @@ a.a--btn-project {
   border: 1px solid #e0e6ea; }
 
 .number {
-  font-size: 0px;
+  display: inline-block;
+  font-size: 16px;
   font-family: Gotham;
   font-weight: 500;
   color: #ffffff;
-  padding: 10px 20px;
+  height: 30px;
+  width: 30px;
+  padding: 4px 11px;
   background-color: #1bbbb3; }
 
 .publications__box {
-  height: 115px; }
+  height: 115px;
+  margin-bottom: 30px; }
 
 .p--publications {
-  margin-left: 55px;
-  margin-right: 25px; }
+  margin-left: 60px;
+  margin-right: 25px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translatey(-85%);
+  -ms-transform: translatey(-85%);
+  transform: translatey(-85%); }
 
-.hero__content {
-  text-align: center; }
-  .hero__content h1 {
+@media all and (max-width: 767px) {
+  .hero__content {
+    text-align: center; }
+    .hero__content #hero h1 {
+      font-size: 18px;
+      line-height: 30px; }
+  .header__logo img {
+    display: none; }
+  .header__logo {
+    background-image: url(../images/burbulai.png); }
+  .about__content h2 {
     font-size: 18px;
-    line-height: 30px; }
+    text-align: center; }
+  .information {
+    height: 560px; }
+  main {
+    height: 500px;
+    background-image: none; }
+  section#hero {
+    height: 600px; }
+  .footer__logo {
+    margin-left: 15vw; }
+  .footer__list {
+    display: none; } }
 
-.header__logo img {
-  display: none; }
-
-.header__logo {
-  background-image: url(../images/burbulai.png); }
-
-.about__content h2 {
-  font-size: 18px;
-  text-align: center; }
-
-.information {
-  height: 560px; }
-
-main {
-  height: 500px;
-  background-image: none; }
-
-section#hero {
-  height: 600px; }
-
-.footer__logo {
-  margin-left: 15vw; }
-
-.footer__list {
-  display: none; }
-
-.information {
-  height: 430px; }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .information {
+    height: 430px; } }

@@ -96,5 +96,12 @@ mixin project2(projectTitle, projectIntro)
 				img(src='../assets/images/kitas_logo.png', alt='logo project')
 			p.p--publications #{projectIntro}
 			a.a--btn-project(href="#") peržiūrėti projektą
-
+			
+			
+mixin publication(publicationNumber, authorsAndTitle )
+	.row
+		.col-md-12
+			.publications__box.flex
+				.number #{publicationNumber}
+				p.p--publications #{authorsAndTitle}
 

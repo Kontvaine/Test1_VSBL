@@ -59,16 +59,17 @@ h2
 	color: $black
 
 
-
-
-
-
 =h2		
 	font-family: Gotham
 	font-weight: bold
 	font-size: 36px
 	line-height: 58px
 	color: $black
+
+section h1
+	+h2
+	text-align: center
+	padding-bottom: 10px
 
 h3
 	font-family: Gotham
@@ -82,6 +83,10 @@ p
 	font-size: 14px
 	line-height: 30px
 	color: $paragraphGrey
+
+p.p--publications
+	font-size: 13px
+	line-height: 24px
 	
 
 section#hero
@@ -184,14 +189,6 @@ section#breadcrumb-list
 	color: #555555
 	content: "►"
 
-	
-
-
-
-#about-page h1
-	+h2
-	text-align: center
-	padding-bottom: 10px
 
 #about-page article
 	margin-bottom: 50px
@@ -234,31 +231,9 @@ blockquote
 		border: 1px solid #ffffff
 		border-radius: 20px
 
-	
-		
-	
-//.about__pic__under p::before 
-//	content: " "
-//	margin: 0 -15px
-//	position: absolute
-//	top: 0
-//	bottom: 0
-//	width: 4px
-//	height: 85px
-//	background: #ffffff
-//	border: 1px solid #ffffff
-//	border-radius: 20px
 
 //SERVICES
 
-
-
-
-
-#services h1
-	+h2
-	text-align: center
-	padding-bottom: 10px
 	
 .a--services__row
 	justify-content: space-between
@@ -289,13 +264,8 @@ blockquote
 		width: 80%
 
 
+//SERVICES INSIDE
 
-//Services inside
-
-#inside__service h1
-	+h2
-	//text-align: center
-	padding-bottom: 10px
 	
 .a--service-btn
 	text-transform: none
@@ -303,6 +273,7 @@ blockquote
 	font-weight: 500
 	//line-height: 60px
 	
+
 
 #inside__service nav
 	transform: translatey(-17%)
@@ -325,8 +296,22 @@ blockquote
 			&:hover .a--service-btn
 				color: #ffffff
 			&:hover 
-				background-color: $Red 
-		
+				background-color: $Red
+			
+	
+.a--service-btn
+	position: relative
+.a--service-btn:after
+		content: " "
+		margin: 0px 77px
+		width: 0
+		height: 0
+		position: absolute
+		border-style: solid
+		border-width: 10px 0 10px 10px
+		border-color: transparent transparent transparent $Red
+		//display: none
+					
 				
 .triangle
 	content: " "
@@ -346,12 +331,10 @@ blockquote
 	padding-top: 60px
 	
 //SCIENCE
-#science h1
-	+h2
-	text-align: center
 
-#science sub p
+sub p
 	text-align: center
+	margin-bottom: 50px
 
 .h2--science
 	font-size: 24px
@@ -363,7 +346,7 @@ blockquote
 	height: 300px
 	background-color: $color
 	padding: 0 50px 0 40px
-	margin: 40px 0 50px 0
+	margin: 0px 0 50px 0
 	
 	p	
 		color: #ffffff 
@@ -396,22 +379,17 @@ blockquote
 	transform: translatey(-50%)
 	
 
-//Projects
-
+//PROJECTS
 
 #projects 
-	h1
-		+h2
-		text-align: center
-	.projects_row
-		margin-top: 35px
+
 	.h2--projects
 		font-size: 24px
 		line-height: 30px
 		margin-top: 30px
-	
+
 	.project__box
-		
+
 		height: 275px
 		border: 1px solid $borderGrey
 		.name-logo
@@ -421,8 +399,7 @@ blockquote
 			//transform: translatey(-50%)
 			img 
 				margin-top: 30px
-				height: 30px
-				
+				height: 30px		
 	
 a.a--btn-project
 	display: inline-block
@@ -434,45 +411,70 @@ a.a--btn-project
 	box-shadow: 0px 0px 16px 10px #f1f1f1
 	
 
+//PUBLICATIONS
+		
 
+.publications__box
+  border: 1px solid $borderGrey
+.number
+	font-size: 0px
+	font-family: Gotham
+	font-weight: 500
+	color: #ffffff
+	padding: 10px 20px
+	background-color: $hero
+	
 			
 	
-//responsive	
-  
+.publications__box	
+	height: 115px
+	
+
+
+
+//.p--publications 
+	position: relative
+	top: 50%
+	transform: translatey(-50%)
+
+.p--publications 			
+	margin-left: 55px
+	margin-right: 25px
+
 	
 @media all and (max-width:767px)
-	.hero__content
-		text-align: center
-		h1
-			font-size: 18px
-			line-height: 30px
-	.header__logo img
-		display: none
-		
-	.header__logo
-		background-image: url(../images/burbulai.png)
-	
-	.about__content h2
-			font-size: 18px
-			text-align: center	
-	
-	.information
-		height: 560px	
-	main
-		height: 500px
-		background-image: none
-	section#hero
-		height: 600px;
-	.footer__logo
-		margin-left: 15vw
-	.footer__list
-		display: none
-	
-	
+.hero__content
+	text-align: center
+	h1
+		font-size: 18px
+		line-height: 30px
+.header__logo img
+	display: none
+
+.header__logo
+	background-image: url(../images/burbulai.png)
+
+.about__content h2
+		font-size: 18px
+		text-align: center	
+
+.information
+	height: 560px	
+main
+	height: 500px
+	background-image: none
+section#hero
+	height: 600px;
+.footer__logo
+	margin-left: 15vw
+.footer__list
+	display: none
+
+
 @media all and (min-width:768px ) and (max-width:1024px)
-	.information 
-    height: 430px
-	
+.information 
+	height: 430px
+
 	
 
 

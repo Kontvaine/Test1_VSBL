@@ -45,6 +45,15 @@ h2 {
   line-height: 58px;
   color: #000000; }
 
+section h1 {
+  font-family: Gotham;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 58px;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 10px; }
+
 h3 {
   font-family: Gotham;
   font-weight: bold;
@@ -57,6 +66,10 @@ p {
   font-size: 14px;
   line-height: 30px;
   color: #555555; }
+
+p.p--publications {
+  font-size: 13px;
+  line-height: 24px; }
 
 section#hero {
   background-color: #1bbbb3;
@@ -158,15 +171,6 @@ section#breadcrumb-list {
   color: #555555;
   content: "►"; }
 
-#about-page h1 {
-  font-family: Gotham;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 58px;
-  color: #000000;
-  text-align: center;
-  padding-bottom: 10px; }
-
 #about-page article {
   margin-bottom: 50px;
   height: 380px;
@@ -206,15 +210,6 @@ blockquote {
     border: 1px solid #ffffff;
     border-radius: 20px; }
 
-#services h1 {
-  font-family: Gotham;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 58px;
-  color: #000000;
-  text-align: center;
-  padding-bottom: 10px; }
-
 .a--services__row {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -245,14 +240,6 @@ blockquote {
   .flex .services__row__content {
     width: 80%; }
 
-#inside__service h1 {
-  font-family: Gotham;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 58px;
-  color: #000000;
-  padding-bottom: 10px; }
-
 .a--service-btn {
   text-transform: none;
   color: #000000;
@@ -276,6 +263,19 @@ blockquote {
       #inside__service nav ul li:hover {
         background-color: #d71440; }
 
+.a--service-btn {
+  position: relative; }
+
+.a--service-btn:after {
+  content: " ";
+  margin: 0px 77px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #d71440; }
+
 .triangle {
   content: " ";
   width: 0;
@@ -290,16 +290,9 @@ blockquote {
 .from-top {
   padding-top: 60px; }
 
-#science h1 {
-  font-family: Gotham;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 58px;
-  color: #000000;
-  text-align: center; }
-
-#science sub p {
-  text-align: center; }
+sub p {
+  text-align: center;
+  margin-bottom: 50px; }
 
 .h2--science {
   font-size: 24px;
@@ -310,7 +303,7 @@ blockquote {
   height: 300px;
   background-color: #1bbbb3;
   padding: 0 50px 0 40px;
-  margin: 40px 0 50px 0;
+  margin: 0px 0 50px 0;
   background-image: url("../images/mikro.png");
   background-repeat: no-repeat;
   background-position: top 75px right 50px; }
@@ -328,7 +321,7 @@ blockquote {
   height: 300px;
   background-color: #d71440;
   padding: 0 50px 0 40px;
-  margin: 40px 0 50px 0;
+  margin: 0px 0 50px 0;
   background-image: url("../images/dnr.png");
   background-repeat: no-repeat;
   background-position: top 75px right 13px; }
@@ -348,17 +341,6 @@ blockquote {
   -webkit-transform: translatey(-50%);
   -ms-transform: translatey(-50%);
   transform: translatey(-50%); }
-
-#projects h1 {
-  font-family: Gotham;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 58px;
-  color: #000000;
-  text-align: center; }
-
-#projects .projects_row {
-  margin-top: 35px; }
 
 #projects .h2--projects {
   font-size: 24px;
@@ -384,31 +366,55 @@ a.a--btn-project {
   -webkit-box-shadow: 0px 0px 16px 10px #f1f1f1;
   box-shadow: 0px 0px 16px 10px #f1f1f1; }
 
-@media all and (max-width: 767px) {
-  .hero__content {
-    text-align: center; }
-    .hero__content h1 {
-      font-size: 18px;
-      line-height: 30px; }
-  .header__logo img {
-    display: none; }
-  .header__logo {
-    background-image: url(../images/burbulai.png); }
-  .about__content h2 {
-    font-size: 18px;
-    text-align: center; }
-  .information {
-    height: 560px; }
-  main {
-    height: 500px;
-    background-image: none; }
-  section#hero {
-    height: 600px; }
-  .footer__logo {
-    margin-left: 15vw; }
-  .footer__list {
-    display: none; } }
+.publications__box {
+  border: 1px solid #e0e6ea; }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  .information {
-    height: 430px; } }
+.number {
+  font-size: 0px;
+  font-family: Gotham;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #1bbbb3; }
+
+.publications__box {
+  height: 115px; }
+
+.p--publications {
+  margin-left: 55px;
+  margin-right: 25px; }
+
+.hero__content {
+  text-align: center; }
+  .hero__content h1 {
+    font-size: 18px;
+    line-height: 30px; }
+
+.header__logo img {
+  display: none; }
+
+.header__logo {
+  background-image: url(../images/burbulai.png); }
+
+.about__content h2 {
+  font-size: 18px;
+  text-align: center; }
+
+.information {
+  height: 560px; }
+
+main {
+  height: 500px;
+  background-image: none; }
+
+section#hero {
+  height: 600px; }
+
+.footer__logo {
+  margin-left: 15vw; }
+
+.footer__list {
+  display: none; }
+
+.information {
+  height: 430px; }

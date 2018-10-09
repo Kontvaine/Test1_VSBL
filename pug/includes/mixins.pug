@@ -17,7 +17,7 @@ mixin header
 							li 
 								a(href="science.html") Mokslas
 							li
-								a(href="#") Komanda 
+								a(href="team.html") Komanda 
 							li 
 								a(href="#") Kontaktai
 							li
@@ -62,7 +62,7 @@ mixin footer
 								li 
 									a.a--footer(href="science.html") Mokslas
 								li
-									a.a--footer(href="#") Komanda 
+									a.a--footer(href="team.html") Komanda 
 								li 
 									a.a--footer(href="#") Kontaktai
 									
@@ -85,7 +85,7 @@ mixin project(projectTitle, logoSrc, projectIntro)
 			.name-logo.flex
 				h2.h2--projects #{projectTitle}
 				img(src='#{logoSrc}', alt='logo project')
-			p.p--publications #{projectIntro}
+			p.p--resized #{projectIntro}
 			a.a--btn-project(href="#") peržiūrėti projektą	
 
 mixin project2(projectTitle, projectIntro)
@@ -94,7 +94,7 @@ mixin project2(projectTitle, projectIntro)
 			.name-logo.flex
 				h2.h2--projects #{projectTitle}
 				img(src='../assets/images/kitas_logo.png', alt='logo project')
-			p.p--publications #{projectIntro}
+			p.p--resized #{projectIntro}
 			a.a--btn-project(href="#") peržiūrėti projektą
 			
 			
@@ -103,5 +103,5 @@ mixin publication(publicationNumber, authorsAndTitle )
 		.col-md-12
 			.publications__box.flex
 				.number #{publicationNumber}
-				p.p--publications #{authorsAndTitle}
+				p.p--resized #{authorsAndTitle}
 

@@ -92,6 +92,19 @@ p
 	line-height: 30px
 	color: $paragraphGrey
 
+
+input, textarea
+	font-family: Gotham book
+	font-weight: 300
+	font-size: 14px
+	line-height: 30px
+	color: orange
+	margin-top: 20px
+
+
+textarea
+	height: 150px
+
 p.p--resized
 	font-size: 13px
 	line-height: 24px
@@ -245,7 +258,7 @@ aside
 	justify-content: space-between
 	text-transform: none
 	//position: relative;
-	height: 140px
+	min-height: 140px
 	display: block
 	border-top: 1px solid $borderGrey
 	border-bottom: 1px solid $borderGrey
@@ -404,14 +417,11 @@ sub p
 
 	.project__box
 		margin-bottom: 30px
-		min-height: 275px
+		height: 275px
 		border: 1px solid $borderGrey
 		padding-top: 20px 
 		.name-logo
 			justify-content: space-between
-			//position: relative
-			//top: 50%
-			//transform: translatey(-50%)
 			img 
 				margin-top: 30px
 				height: 30px		
@@ -491,9 +501,15 @@ a.a--btn-project
 //CONTACTS
 
 
-#contacts
+#contact
 	.h2--resized
 		color: #000000
+		margin-bottom: 30px
+
+iframe
+	margin: 0 auto
+	height: 415px
+	width: 100%  
 
 
 

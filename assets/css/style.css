@@ -78,6 +78,17 @@ p {
   line-height: 30px;
   color: #555555; }
 
+input, textarea {
+  font-family: Gotham book;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  color: orange;
+  margin-top: 20px; }
+
+textarea {
+  height: 150px; }
+
 p.p--resized {
   font-size: 13px;
   line-height: 24px; }
@@ -226,7 +237,7 @@ aside {
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-transform: none;
-  height: 140px;
+  min-height: 140px;
   display: block;
   border-top: 1px solid #e0e6ea;
   border-bottom: 1px solid #e0e6ea; }
@@ -352,7 +363,7 @@ sub p {
 
 #projects .project__box {
   margin-bottom: 30px;
-  min-height: 275px;
+  height: 275px;
   border: 1px solid #e0e6ea;
   padding-top: 20px; }
   #projects .project__box .name-logo {
@@ -410,8 +421,14 @@ a.a--btn-project {
 #team .from-top {
   padding-top: 30px; }
 
-#contacts .h2--resized {
-  color: #000000; }
+#contact .h2--resized {
+  color: #000000;
+  margin-bottom: 30px; }
+
+iframe {
+  margin: 0 auto;
+  height: 415px;
+  width: 100%; }
 
 @media all and (max-width: 767px) {
   .hero__content {

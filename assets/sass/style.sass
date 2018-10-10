@@ -9,7 +9,6 @@ $borderGrey: #e0e6ea
 .container--full
 	width: 100%
 	
-
 header
 	background-color: $navColor
 	padding: 10px 0 10px 0
@@ -40,8 +39,6 @@ a
 		color: #ffffff
 		text-decoration: none
 
-
-
 #hero h1
 	font-family: Gotham
 	font-weight: 300
@@ -58,6 +55,7 @@ h2
 	font-size: 36px
 	line-height: 58px
 	color: $black
+	margin-bottom: 20px
 
 
 =h2		
@@ -78,14 +76,21 @@ h3
 	font-size: 18px
 	color: $black
 
+h4
+	font-family: Gotham book
+	font-weight: 300
+	font-size: 14px
+	color: $paragraphGrey
+
+.h4--state-bold
+	font-weight: bold	
+
 p
 	font-family: Gotham book
 	font-weight: 300
 	font-size: 14px
 	line-height: 30px
 	color: $paragraphGrey
-
-h3 
 
 p.p--resized
 	font-size: 13px
@@ -160,7 +165,7 @@ footer
 		font-size: 12px
 		line-height: 15px
 	
-//About html
+//ABOUT
 
 section#breadcrumb-list
 	background-color: $aboutGrey
@@ -236,7 +241,6 @@ aside
 
 //SERVICES
 
-	
 .a--services__row
 	justify-content: space-between
 	text-transform: none
@@ -275,7 +279,6 @@ aside
 	font-weight: 500
 	//line-height: 60px
 	
-
 
 #inside__service nav
 	transform: translatey(-17%)
@@ -331,6 +334,9 @@ aside
 
 .from-top
 	padding-top: 60px
+
+=from-top($padding-top)
+	padding-top: $padding-top
 	
 //SCIENCE
 
@@ -338,17 +344,22 @@ sub p
 	text-align: center
 	margin-bottom: 50px
 
-.h2--science
+
+//.h2--science buvo
+
+.h2--resized
 	font-size: 24px
+	line-height: 30px
 	color: #ffffff
-	margin: 0
+	//margin: 0
 
 
 =science-columns($color)
-	height: 300px
+	min-height: 300px
 	background-color: $color
-	padding: 0 50px 0 40px
-	margin: 0px 0 50px 0
+	padding: 30px 50px 0 40px
+	margin-bottom: 60px
+	//padding-bottom: 50px
 	
 	p	
 		color: #ffffff 
@@ -359,6 +370,7 @@ sub p
 		padding: 0 18px
 		background-color: #ffffff 
 		text-align: center
+		
 	
 .projects
 	+science-columns($hero)
@@ -376,10 +388,10 @@ sub p
 	background-position: top 75px right 13px
 
 .science__content
-	position: relative
-	top: 50%
-	transform: translatey(-50%)
-	
+//	position: relative
+//	top: 50%
+//	transform: translatey(-50%)
+//	
 
 //PROJECTS
 
@@ -388,12 +400,13 @@ sub p
 	.h2--projects
 		font-size: 24px
 		line-height: 30px
-		margin-top: 30px
+	
 
 	.project__box
-
-		height: 275px
+		margin-bottom: 30px
+		min-height: 275px
 		border: 1px solid $borderGrey
+		padding-top: 20px 
 		.name-logo
 			justify-content: space-between
 			//position: relative
@@ -411,6 +424,7 @@ a.a--btn-project
 	//margin-bottom: 30px
 	background-color: $Red
 	box-shadow: 0px 0px 16px 10px #f1f1f1
+	margin-bottom: 30px
 	
 
 //PUBLICATIONS
@@ -433,7 +447,7 @@ a.a--btn-project
 	
 .publications__box	
 	max-height: 115px
-	margin-bottom: 30px
+//	margin-bottom: 30px
 	
 
 	p.p--resized
@@ -447,17 +461,43 @@ a.a--btn-project
 
 
 //TEAM
+#team
+	.team__member
 
-.team-member
-	display: block
-	border: 1px solid red
-	
+		margin-bottom: 30px
+		min-height: 230px
+		border: 1px solid $borderGrey	
+		padding: 20px 35px 0px 15px
+		
+		.member__box__content
+
+			justify-content: flex-start
+			.team__member__photo
+				margin-right: 20px
+				
+				img
+					border-radius: 60%
+					height: 70px
+					width: 70px
+		p.p--resized 
+			padding-top: 20px
+	.from-top
+		+from-top(30px)
+
+
+=from-top($padding-top)
+	padding-top: $padding-top
+
+//CONTACTS
+
+
+#contacts
+	.h2--resized
+		color: #000000
 
 
 
-
-
-//RESPONSIVE
+//RESPONSIVE visus, kur buvo heigt surasius min-heigth galima nebekeisti jo per media?
 	
 @media all and (max-width:767px)
 	.hero__content

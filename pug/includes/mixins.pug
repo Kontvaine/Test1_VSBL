@@ -19,7 +19,7 @@ mixin header
 							li
 								a(href="team.html") Komanda 
 							li 
-								a(href="#") Kontaktai
+								a(href="contacts.html") Kontaktai
 							li
 
 							
@@ -64,7 +64,7 @@ mixin footer
 								li
 									a.a--footer(href="team.html") Komanda 
 								li 
-									a.a--footer(href="#") Kontaktai
+									a.a--footer(href="contacts.html") Kontaktai
 									
 
 mixin services(link, title, intro)
@@ -104,4 +104,21 @@ mixin publication(publicationNumber, authorsAndTitle )
 			.publications__box.flex
 				.number #{publicationNumber}
 				p.p--resized #{authorsAndTitle}
+				
+mixin member(fullname, position, aboutMember)
+	.col-md-6
+		.team__member
+			.col-md-12
+				.member__box__content.flex
+					.team__member__photo
+						img(src='../assets/images/doctor.jpg', alt='member')
+					.team__member__name
+						h4.h4--state-bold #{fullname}
+						h4 #{position}
+				p.p--resized #{aboutMember}		
+						
+				
 
+
+
+	

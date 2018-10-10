@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+	head
+
+	title Kompetencijos centras
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width", initial-scale=1) 
+
+	link(rel="stylesheet", href="../assets/css/bootstrap.min.css")
+	link(rel="stylesheet", href="../assets/css/bootstrap-theme.min.css")
+	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
+	link(rel="stylesheet", href="../assets/css/style.css")
+	link(rel="stylesheet", href="../assets/fonts/stylesheet.css")
+	include includes/mixins.pug	
+
+		
+	body
+
+		+header
+		
+		section#breadcrumb-list
+			.container--full
+				.container
+
+					ul.breadcrumb
+						li.breadcrumb-item
+							a.a--breadcrumb(href='index.html') Pagrindinis
+						li.breadcrumb-item(aria-current='page') 
+							span Kontaktai
+							
+		section#contacts
+			.container
+				.row
+					.col-md-12
+						h1 Kontaktai
+				.row
+					.col-md-8.col-md-offset-2
+						sub
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus.
+							
+				.row
+					.col-md-2
+						h2.h2--resized Kontaktai
+
+					.col-md-6
+						h2.h2--resized Susisiekti
+
+					.col-md-4
+						h2.h2--resized Mes žemėlapyje
+							
+							
+							
+							
+							
+		+footer
+				

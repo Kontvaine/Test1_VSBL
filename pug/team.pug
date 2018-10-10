@@ -38,26 +38,34 @@ html(lang="en")
 					.col-md-8.col-md-offset-2
 						sub
 							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus.
+							
 				.row
+				
 					.col-md-6
-						.col-md-11
-							.team_member
-								.content
-									h4 vardas pavarde
-									h4 pareigos
-									p.p--resized Praesent varius lacus nisl, suscipit iaculis mauris rhoncus nec. Vivamus a rhoncus orci. Maecenas eu nulla eget ex aliquet faucibus. Nam leo purus, scelerisque eu dictum non.
-								
-								
-					.col-md-6
-						.col-md-11
-							.team_member
-								.content
-									h4 vardas pavarde
-									h4 pareigos
-									p.p--resized Donec in ante nec quam varius suscipit vitae et eros. Praesent sed euismod eros. Vivamus elit lacus, facilisis nec dui mattis, viverra cursus nibh. Duis faucibus tellus finibus mauris.
+						.team__member
+							.col-md-12
+								.member__box__content.flex
+									.team__member__photo
+										img(src='../assets/images/doctor.jpg', alt='member')
+									.team__member__name
+										h4.h4--state-bold Vardas Pavarde
+										h4 pareigos
+								p.p--resized Sed nec sapien ut magna placerat volutpat. Cras congue orci at mi luctus, ut congue odio tincidunt. Ut consequat convallis libero nec rutrum. Curabitur rutrum iaculis massa quis facilisis. Etiam dapibus diam id condimentum commodo. Sed id aliquet erat, id imperdiet urnasection.	
+					
+					//mixin member(fullname, position, aboutMember)
+										
+					+member("jonas jonaitis","vyr. gydytojas", " Sed nec sapien ut magna placerat volutpat. Ut consequat convallis libero nec rutrum. Curabitur rutrum iaculis massa quis facilisis.")
+					
+					+member("petras jonaitis", "pareigos nr. 2", "Sed nec sapien ut magna placerat volutpat. Cras congue orci at mi luctus, ut congue odio tincidunt. Ut consequat convallis libero nec rutrum. Curabitur rutrum iaculis massa quis facilisis. Etiam dapibus diam id condimentum commodo. Sed id aliquet erat, id imperdiet urna.")
+					
+					+member("jonas jonaitis", "pareigos nr. 2", "Sed nec sapien ut magna placerat volutpat. Cras congue orci at mi luctus, ut congue odio tincidunt. Ut consequat convallis libero nec rutrum. Curabitur rutrum iaculis massa quis facilisis. Etiam dapibus diam id condimentum commodo. Sed id aliquet erat, id imperdiet urna.")
+						
+					+member("vytis vytis","vyr. gydytojas", " Sed nec sapien ut magna placerat volutpat. Ut consequat convallis libero nec rutrum. Curabitur rutrum iaculis massa quis facilisis.")
+					
+					+member("jonas jonaitis", "pareigos nr. 2", "Sed nec sapien ut magna placerat volutpat. Cras congue orci at mi luctus, ut congue odio tincidunt. Ut consequat convallis libero nec rutrum. Curabitur rutrum iaculis massa quis facilisis. Etiam dapibus diam id condimentum commodo. Sed id aliquet erat, id imperdiet urna.")
 
+				
 						
-						
-		.from-top
+			.from-top
 		+footer
 				

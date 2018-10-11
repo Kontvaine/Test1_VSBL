@@ -2,15 +2,7 @@ doctype html
 html(lang="en")
 	head
 
-	title Kompetencijos centras
-	meta(charset="utf-8")
-	meta(name="viewport", content="width=device-width", initial-scale=1) 
-
-	link(rel="stylesheet", href="../assets/css/bootstrap.min.css")
-	link(rel="stylesheet", href="../assets/css/bootstrap-theme.min.css")
-	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
-	link(rel="stylesheet", href="../assets/css/style.css")
-	link(rel="stylesheet", href="../assets/fonts/stylesheet.css")
+	include head.pug
 	include includes/mixins.pug	
 
 		
@@ -40,15 +32,15 @@ html(lang="en")
 							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate libero, fermentum ornare sem. Maecenas maximus sagittis ante non dapibus.
 							
 				.row
-					.col-md-2
+					.col-md-2#kontaktai
 
-						h2.h2--resized Kontaktai
-						.contact__phone.flex
-							img(src='../assets/images/phone.png', alt='phone')
-							p.contacts +370 633 99889
-						.contact_email.flex
-							img(src='../assets/images/mail.png', alt='mail')
-							a.a--contact(href="mailto:jonaitis@gmail.com") jonaitis@gmail.com	
+							h2.h2--resized Kontaktai
+							.contact__phone.flex
+								img(src='../assets/images/phone.png', alt='phone')
+								p.contacts +370 633 99889
+							.contact_email.flex
+								img(src='../assets/images/mail.png', alt='mail')
+								a.a--contact(href="mailto:jonaitis@gmail.com") jonaitis@gmail.com	
 								
 
 

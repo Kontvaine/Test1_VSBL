@@ -54,7 +54,7 @@ section h1 {
   line-height: 58px;
   color: #000000;
   text-align: center;
-  padding-bottom: 10px; }
+  margin-top: 50px; }
 
 h3 {
   font-family: Gotham;
@@ -174,7 +174,7 @@ section#breadcrumb-list {
 
 .breadcrumb {
   padding: 0;
-  margin: 12px 0;
+  margin: 5px 0 5px 0;
   background-color: transparent; }
 
 .breadcrumb > li + li:before {
@@ -185,11 +185,11 @@ section#breadcrumb-list {
 #about-page article {
   margin-bottom: 50px; }
 
-aside {
+#about-page aside {
   height: 380px;
   width: 365px;
   margin-top: 10px; }
-  aside blockquote {
+  #about-page aside blockquote {
     display: block;
     width: calc(100% - 55px);
     background-color: #1bbbb3;
@@ -210,7 +210,7 @@ aside {
     background-image: url("../images/quot_03.png");
     background-repeat: no-repeat;
     background-position: top 10px right 30px; }
-    aside blockquote:before {
+    #about-page aside blockquote:before {
       content: " ";
       margin: 15px -15px;
       position: absolute;
@@ -233,14 +233,21 @@ aside {
   .a--services__row:hover {
     border-top: 1px solid #d71440;
     border-bottom: 1px solid #d71440;
-    -webkit-box-shadow: 0px 0px 16px 10px #efefef;
-    box-shadow: 0px 0px 16px 10px #efefef; }
+    -webkit-box-shadow: 0px 0px 25px 25px rgba(190, 199, 205, 0.3);
+    box-shadow: 0px 0px 25px 25px rgba(190, 199, 205, 0.3); }
   .a--services__row:hover h3 {
     color: #d71440; }
   .a--services__row .services-arrow {
     display: block;
     margin-top: auto;
     margin-bottom: auto; }
+    .a--services__row .services-arrow:hover {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      -webkit-transition-timing-function: linear;
+      -o-transition-timing-function: linear;
+      transition-timing-function: linear; }
 
 .flex {
   display: -webkit-box;
@@ -256,44 +263,40 @@ aside {
   color: #000000;
   font-weight: 500; }
 
-#inside__service nav {
-  -webkit-transform: translatey(-17%);
-  -ms-transform: translatey(-17%);
-  transform: translatey(-17%); }
-  #inside__service nav ul {
-    padding: 0;
-    list-style: none; }
-    #inside__service nav ul li {
-      border-top: solid 1px #d3dce2;
-      padding: 20px;
-      background-color: #eaeef1; }
-      #inside__service nav ul li:last-child {
-        border-bottom: solid 1px #d3dce2; }
-      #inside__service nav ul li:hover .a--service-btn {
-        color: #ffffff; }
-      #inside__service nav ul li:hover {
-        background-color: #d71440; }
+#inside__service h1 {
+  margin-bottom: 0;
+  text-align: left; }
 
-.a--service-btn {
-  position: relative; }
+#inside__service aside {
+  margin-top: 60px; }
 
-.a--service-btn:after {
-  content: " ";
-  margin: 0px 77px;
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-style: solid;
-  border-width: 10px 0 10px 10px;
+#inside__service nav ul {
+  padding: 0;
+  list-style: none;
   border-color: transparent transparent transparent #d71440; }
-
-.triangle {
-  content: " ";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #d71440; }
+  #inside__service nav ul li {
+    border-top: solid 1px #d3dce2;
+    padding: 20px;
+    background-color: #eaeef1; }
+    #inside__service nav ul li:last-child {
+      border-bottom: solid 1px #d3dce2; }
+    #inside__service nav ul li:hover .a--service-btn {
+      color: #ffffff; }
+    #inside__service nav ul li:hover {
+      background-color: #d71440; }
+    #inside__service nav ul li .a--service-btn {
+      position: relative; }
+    #inside__service nav ul li .a--service-btn:after {
+      content: " ";
+      margin: 0px 74px;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-style: solid;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent; }
+    #inside__service nav ul li:hover .a--service-btn:after {
+      border-color: transparent transparent transparent #d71440; }
 
 .custom {
   min-height: 700px; }
@@ -326,7 +329,9 @@ sub p {
     line-height: 55px;
     padding: 0 18px;
     background-color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    -webkit-box-shadow: 7px 8px 12px 1px rgba(63, 57, 57, 0.35);
+    box-shadow: 7px 8px 12px 1px rgba(63, 57, 57, 0.35); }
 
 .publications {
   min-height: 300px;
@@ -344,7 +349,9 @@ sub p {
     line-height: 55px;
     padding: 0 18px;
     background-color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    -webkit-box-shadow: 7px 8px 12px 1px rgba(63, 57, 57, 0.35);
+    box-shadow: 7px 8px 12px 1px rgba(63, 57, 57, 0.35); }
 
 #projects .h2--projects {
   font-size: 24px;
@@ -370,7 +377,9 @@ a.a--btn-project {
   background-color: #d71440;
   -webkit-box-shadow: 0px 0px 16px 10px #f1f1f1;
   box-shadow: 0px 0px 16px 10px #f1f1f1;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  -webkit-box-shadow: 2px 7px 25px 3px rgba(63, 57, 57, 0.3);
+  box-shadow: 2px 7px 25px 3px rgba(63, 57, 57, 0.3); }
 
 .publications__box {
   border: 1px solid #e0e6ea; }
@@ -388,6 +397,8 @@ a.a--btn-project {
 
 .publications__box {
   max-height: 115px; }
+  .publications__box p.p--resized {
+    padding: 0 25px 0 60px; }
 
 #team .team__member {
   margin-bottom: 30px;
@@ -422,23 +433,33 @@ a.a--btn-project {
   text-transform: none;
   color: #d71440; }
 
+#contact img {
+  padding-left: 9px; }
+
 #contact .contact__phone {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   #contact .contact__phone img {
     height: 24px; }
 
 #contact .contact_email {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   #contact .contact_email img {
     height: 16px; }
 
+#kontaktai {
+  padding: 0; }
+
 input, textarea {
+  border: 1px solid #bec7cd;
+  -webkit-box-shadow: inset 7px 8px 12px 1px rgba(190, 199, 205, 0.35);
+  box-shadow: inset 7px 8px 12px 1px rgba(190, 199, 205, 0.35);
   margin-bottom: 20px;
-  width: 100%; }
+  width: 100%;
+  outline: none; }
 
 ::-webkit-input-placeholder {
   font-family: Gotham book;
@@ -496,11 +517,10 @@ iframe {
   width: 100%; }
 
 @media all and (max-width: 767px) {
-  .hero__content {
-    text-align: center; }
-    .hero__content #hero h1 {
-      font-size: 18px;
-      line-height: 30px; }
+  text-align: center;
+  #hero h1 {
+    font-size: 18px;
+    line-height: 30px; }
   .header__logo img {
     display: none; }
   .header__logo {

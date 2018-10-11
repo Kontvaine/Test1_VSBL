@@ -78,17 +78,6 @@ p {
   line-height: 30px;
   color: #555555; }
 
-input, textarea {
-  font-family: Gotham book;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 30px;
-  color: orange;
-  margin-top: 20px; }
-
-textarea {
-  height: 150px; }
-
 p.p--resized {
   font-size: 13px;
   line-height: 24px; }
@@ -424,6 +413,82 @@ a.a--btn-project {
 #contact .h2--resized {
   color: #000000;
   margin-bottom: 30px; }
+
+#contact a, #contact p.contacts {
+  font-family: Gotham book;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: none;
+  color: #d71440; }
+
+#contact .contact__phone {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  #contact .contact__phone img {
+    height: 24px; }
+
+#contact .contact_email {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  #contact .contact_email img {
+    height: 16px; }
+
+input, textarea {
+  margin-bottom: 20px;
+  width: 100%; }
+
+::-webkit-input-placeholder {
+  font-family: Gotham book;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #bec7cd;
+  padding-left: 20px; }
+
+:-ms-input-placeholder {
+  font-family: Gotham book;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #bec7cd;
+  padding-left: 20px; }
+
+::-ms-input-placeholder {
+  font-family: Gotham book;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #bec7cd;
+  padding-left: 20px; }
+
+::placeholder {
+  font-family: Gotham book;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #bec7cd;
+  padding-left: 20px; }
+
+textarea {
+  height: 150px; }
+
+input {
+  height: 45px; }
+
+input[type='submit'] {
+  background-color: #d71440;
+  height: 50px;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Gotham;
+  font-weight: 500;
+  font-size: 14px;
+  border: none; }
 
 iframe {
   margin: 0 auto;

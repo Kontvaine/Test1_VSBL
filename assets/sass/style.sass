@@ -93,18 +93,6 @@ p
 	color: $paragraphGrey
 
 
-input, textarea
-	font-family: Gotham book
-	font-weight: 300
-	font-size: 14px
-	line-height: 30px
-	color: orange
-	margin-top: 20px
-
-
-textarea
-	height: 150px
-
 p.p--resized
 	font-size: 13px
 	line-height: 24px
@@ -457,18 +445,8 @@ a.a--btn-project
 	
 .publications__box	
 	max-height: 115px
-//	margin-bottom: 30px
+
 	
-
-	p.p--resized
-		margin-left: 60px
-		margin-right: 30px
-
-//		position: relative
-//		top: 50%
-//		transform: translatey(-50%)
-	
-
 
 //TEAM
 #team
@@ -505,11 +483,86 @@ a.a--btn-project
 	.h2--resized
 		color: #000000
 		margin-bottom: 30px
+	a, p.contacts
 
+		font-family: Gotham book
+		font-weight: bold
+		font-size: 16px
+		line-height: 30px
+		text-transform: none
+		color: $Red
+	img	
+		//padding-left: 9px
+		//padding-right: 28px
+	
+	.contact__phone 
+		justify-content: flex-start
+		img
+			height: 24px
+	.contact_email 
+		justify-content: flex-start
+		img
+			height: 16px
+
+	 
+	
+
+
+	
+	
+form
+
+
+
+input, textarea
+
+	margin-bottom: 20px
+	width: 100%
+
+::placeholder 
+	font-family: Gotham book
+	font-weight: 500
+	font-size: 14px
+	line-height: 30px
+	color: #bec7cd
+	//margin-top: 20px
+	padding-left: 20px
+	
+textarea
+	height: 150px
+	
+	
+
+
+	
+	
+
+input
+	height: 45px
+	//border: 1 px solid #bec7cd
+	//box-shadow: inset 5px 16px 42px 8px #efefef
+
+
+input[type='submit']
+	background-color: $Red
+	height: 50px
+	width: 100%
+	color: #ffffff
+	text-transform: uppercase
+	color: #ffffff
+	font-family: Gotham
+	font-weight: 500
+	font-size: 14px
+	//line-height: 60px
+	border: none
+	
+
+
+	
 iframe
 	margin: 0 auto
 	height: 415px
-	width: 100%  
+	width: 100% 
 
 
 

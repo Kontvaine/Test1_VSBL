@@ -12,46 +12,46 @@
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
   </head>
   <body>
-      <header>
-        <div class="container container--full">
-          <div class="row">
-            <div class="col-sm-12"><a class="header__logo" href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
-              <div class="header__list">
-                <ul class="list-inline text-right">
-                  <li><a href="about.html">Apie mus  </a></li>
-                  <li> <a href="services.html">Paslaugos</a></li>
-                  <li><a href="#">Informacija pacientams </a></li>
-                  <li> <a href="science.html">Mokslas</a></li>
-                  <li><a href="team.html">Komanda </a></li>
-                  <li> <a href="contacts.html">Kontaktai</a></li>
-                  <li>
-                    <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">LT<span class="caret"></span></button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">ENG</a></li>
-                        <li><a href="#">SV</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+    <header>
+      <div class="container container--full">
+        <div class="row">
+          <div class="col-sm-12"><a class="header__logo" href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+            <div class="header__list">
+              <ul class="list-inline text-right">
+                <li><a href="about.html">Apie mus  </a></li>
+                <li> <a href="services.html">Paslaugos</a></li>
+                <li><a href="#">Informacija pacientams </a></li>
+                <li> <a href="science.html">Mokslas</a></li>
+                <li><a href="team.html">Komanda </a></li>
+                <li> <a href="contacts.html">Kontaktai</a></li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">LT<span class="caret"></span></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">ENG</a></li>
+                      <li><a href="#">SE</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
     <section id="hero">
       <div class="hero__content">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-md-8">
-              <h1>Retų inkstų ligų ir urogenitalinės sistemos formavimosi ydų <span class="h1--state-bold">kompetencijos centras</span></h1><a class="a--btn" href="index.html" target="_blank">Paslaugos</a>
+              <h1>Retų inkstų ligų ir urogenitalinės sistemos formavimosi ydų <span class="h1--state-bold">kompetencijos centras</span></h1><a class="a--btn" href="index.html">Paslaugos</a>
             </div>
           </div>
         </div>
       </div>
     </section>
     <main>
-      <div class="about__content">
+      <section id="index-about">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-md-8 col-md-offset-4">
@@ -61,55 +61,51 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <section class="information">
-      <div class="information__blocks">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-4">
-              <!--mixin information_blocks(title, text, link, link_headline)-->
-              <div class="information__blocks__content">
-                  <h3>Paslaugos</h3>
-                  <p>Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.</p><a class="a-information_block" href="#{link}" target="_blank">Paslaugos   <i class="fas fa-arrow-right"></i></a>
-              </div>
+    <section id="information">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <!--mixin information_blocks(title, text, link, link_headline)-->
+            <div class="information__blocks__content">
+                <h3>Paslaugos</h3>
+                <p>Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.</p><a class="a-information_block" href="#{link}" target="_blank">Paslaugos   <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="col-lg-4 col-md-4">
-              <div class="information__blocks__content aside">
-                  <h3>Bendra informacija</h3>
-                  <p>Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.</p><a class="a-information_block" href="#{link}" target="_blank">Bendra informacija   <i class="fas fa-arrow-right"></i></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="information__blocks__content">
+                <h3>Bendra informacija</h3>
+                <p>Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.</p><a class="a-information_block" href="#{link}" target="_blank">Bendra informacija   <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="col-lg-4 col-md-4">
-              <div class="information__blocks__content aside">
-                  <h3>Apie ligas</h3>
-                  <p>Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis nibh. Aenean eleifend auctor aliquam.</p><a class="a-information_block" href="#{link}" target="_blank">Apie ligas    <i class="fas fa-arrow-right"></i></a>
-              </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="information__blocks__content">
+                <h3>Apie ligas</h3>
+                <p>Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis nibh. Aenean eleifend auctor aliquam.</p><a class="a-information_block" href="#{link}" target="_blank">Apie ligas    <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-      <footer>
-        <div class="container--full">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12"><a class="footer__logo" href="index.html"><img src="../assets/images/logo_text.png" alt="logo text"></a>
-                <div class="footer__list">
-                  <ul class="list-inline text-right">
-                    <li><a class="a--footer" href="about.html">Apie mus  </a></li>
-                    <li> <a class="a--footer" href="services.html">Paslaugos</a></li>
-                    <li><a class="a--footer" href="#">Informacija pacientams </a></li>
-                    <li> <a class="a--footer" href="science.html">Mokslas</a></li>
-                    <li><a class="a--footer" href="team.html">Komanda </a></li>
-                    <li> <a class="a--footer" href="contacts.html">Kontaktai</a></li>
-                  </ul>
-                </div>
-              </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12"><a class="footer__logo" href="index.html"><img src="../assets/images/logo_text.png" alt="logo text"></a>
+            <div class="footer__list">
+              <ul class="list-inline text-right">
+                <li><a class="a--footer" href="about.html">Apie mus  </a></li>
+                <li> <a class="a--footer" href="services.html">Paslaugos</a></li>
+                <li><a class="a--footer" href="#">Informacija pacientams </a></li>
+                <li> <a class="a--footer" href="science.html">Mokslas</a></li>
+                <li><a class="a--footer" href="team.html">Komanda </a></li>
+                <li> <a class="a--footer" href="contacts.html">Kontaktai </a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
     <!--include includes/js.pug-->
   </body>
 </html>

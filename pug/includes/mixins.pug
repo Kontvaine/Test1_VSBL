@@ -1,71 +1,9 @@
-mixin header
-	header
-		.container.container--full
-			.row
-				.col-sm-12
-
-					a.header__logo(href='index.html')
-						img(src='../assets/images/logo.png', alt='logo')
-					.header__list
-						ul.list-inline.text-right
-							li
-								a(href="about.html") Apie mus  
-							li 
-								a(href="services.html") Paslaugos
-							li
-								a(href="#") Informacija pacientams 
-							li 
-								a(href="science.html") Mokslas
-							li
-								a(href="team.html") Komanda 
-							li 
-								a(href="contacts.html") Kontaktai
-							li
-
-							
-								.dropdown
-									button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-										| LT
-										span.caret
-										
-									ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-										li
-											a(href='#') ENG
-										li
-											a(href='#') SV
-						
-
-						
 mixin information_blocks(title, text, link, link_headline)
 	h3 #{title}
 	p #{text}
 	a.a-information_block(href='#{link}' target='_blank') #{link_headline}   
 		i.fas.fa-arrow-right
-		
-		
-mixin footer
-	footer
-		.container--full
-			.container
-				.row
-					.col-sm-12
-						a.footer__logo(href='index.html')
-							img(src='../assets/images/logo_text.png', alt='logo text')
-						.footer__list
-							ul.list-inline.text-right
-								li
-									a.a--footer(href="about.html") Apie mus  
-								li 
-									a.a--footer(href="services.html") Paslaugos
-								li
-									a.a--footer(href="#") Informacija pacientams 
-								li 
-									a.a--footer(href="science.html") Mokslas
-								li
-									a.a--footer(href="team.html") Komanda 
-								li 
-									a.a--footer(href="contacts.html") Kontaktai
-									
+
 
 mixin services(link, title, intro)
 	.container

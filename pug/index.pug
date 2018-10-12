@@ -2,12 +2,13 @@ doctype html
 html(lang="en")
 	head
 	include head.pug
+	
 	include includes/mixins.pug	
 	
 		
 	body
 
-		+header
+		include includes/header.pug
 			
 
 		section#hero
@@ -17,13 +18,13 @@ html(lang="en")
 						.col-lg-8.col-md-8
 							h1 Retų inkstų ligų ir urogenitalinės sistemos formavimosi ydų 
 								span.h1--state-bold kompetencijos centras
-							a.a--btn(href="index.html", target="_blank") Paslaugos
+							a.a--btn(href="index.html") Paslaugos
 	
 							
 							
 							
 		main
-			.about__content
+			section#index-about
 				.container
 					.row
 						.col-lg-8.col-md-8.col-md-offset-4
@@ -34,30 +35,29 @@ html(lang="en")
 						
 
 
-		section.information
-			.information__blocks
-				.container
-					.row
-						.col-lg-4.col-md-4
-							
-							//mixin information_blocks(title, text, link, link_headline)
-							.information__blocks__content
-								+information_blocks("Paslaugos", 
-								"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
-								"index.html", 
-								"Paslaugos")
-						.col-lg-4.col-md-4
-							.information__blocks__content.aside
-								+information_blocks("Bendra informacija", 
-								"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
-								"Bendra informacija")
-						.col-lg-4.col-md-4
-							.information__blocks__content.aside
-								+information_blocks("Apie ligas", 
-								"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis nibh. Aenean eleifend auctor aliquam.", "#",
-								"Apie ligas ")
+		section#information
+			.container
+				.row
+					.col-lg-4.col-md-4
 
-		+footer
+						//mixin information_blocks(title, text, link, link_headline)
+						.information__blocks__content
+							+information_blocks("Paslaugos", 
+							"Aenean venenatis fringilla nulla, sed dapibus ligula consectetur sed. Donec posuere elit non dolor blandit venenatis.", 
+							"index.html", 
+							"Paslaugos")
+					.col-lg-4.col-md-4
+						.information__blocks__content
+							+information_blocks("Bendra informacija", 
+							"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis.", "#",
+							"Bendra informacija")
+					.col-lg-4.col-md-4
+						.information__blocks__content
+							+information_blocks("Apie ligas", 
+							"Nullam ullamcorper, lectus sit amet vestibulum efficitur, odio ante posuere sapien, eget euismod mi enim mattis nibh. Aenean eleifend auctor aliquam.", "#",
+							"Apie ligas ")
+
+		include includes/footer.pug
 
 
 		//include includes/js.pug

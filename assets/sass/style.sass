@@ -119,29 +119,30 @@ section#hero
 			background-color: $Red
 			display: inline-block
 	
-main
+#index-about
 	background-color: #eaeef1	
 	background-image: url(../images/burbulai.png) 
 	background-repeat: no-repeat
 	background-position: 17% center
 	height: 400px
-	.about__content
+	#index-about
 		position: relative
 		top: 50%
 		transform: translatey(-50%)	
-	
-.information
-	
+
+#information
 	height: 360px
-	.information__blocks
-		position: relative
-		top: 50%
-		transform: translatey(-50%)
-	
-a.a-information_block
-	color: $Red
-	font-weight: bold
-	display: inline-block
+	.information__blocks__content
+		padding-top: 95px
+		//position: relative
+		//top: 50%
+		//transform: translatey(-50%)
+			pa
+
+		a.a-information_block
+			color: $Red
+			font-weight: bold
+			display: inline-block
 
 footer
 	display: block
@@ -243,6 +244,10 @@ section#breadcrumb-list
 
 //SERVICES
 
+#services
+	padding-bottom: 60px
+
+
 .a--services__row
 	justify-content: space-between
 	text-transform: none
@@ -266,9 +271,7 @@ section#breadcrumb-list
 		display: block
 		margin-top: auto
 		margin-bottom: auto
-		&:hover
-			transform: rotate(90deg)
-			transition-timing-function: linear
+
 
 .flex
 	display: flex
@@ -287,6 +290,7 @@ section#breadcrumb-list
 	//line-height: 60px
 
 #inside__service
+	padding-bottom: 60px
 	h1
 		margin-bottom: 0
 		text-align: left
@@ -300,7 +304,7 @@ section#breadcrumb-list
 		list-style: none
 		li
 			border-top: solid 1px #d3dce2
-			padding: 20px 
+			
 			background-color: $aboutGrey
 
 			&:last-child 
@@ -312,6 +316,8 @@ section#breadcrumb-list
 
 			.a--service-btn
 				position: relative
+				display: block
+				padding: 20px 
 			.a--service-btn:after
 					content: " "
 					margin: 0px 74px
@@ -541,12 +547,7 @@ input, textarea
 	padding-left: 20px
 	
 textarea
-	height: 150px
-
-	
-
-
-	
+	height: 150px	
 	
 
 input
@@ -567,6 +568,7 @@ input[type='submit']
 	font-size: 14px
 	//line-height: 60px
 	border: none
+	box-shadow: none
 	
 
 
@@ -584,8 +586,7 @@ iframe
 	
 	.hero__content
 	text-align: center
-
-	#hero h1
+	h1
 		font-size: 18px
 		line-height: 30px
 	
@@ -599,7 +600,7 @@ iframe
 		font-size: 18px
 		text-align: center	
 
-	.information
+	#information
 		height: 560px	
 	main
 		height: 500px
@@ -613,7 +614,7 @@ iframe
 
 
 @media all and (min-width:768px ) and (max-width:1024px)
-	.information 
+	#information 
 		height: 430px
 
 	

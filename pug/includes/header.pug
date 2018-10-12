@@ -1,0 +1,35 @@
+
+header
+	.container.container--full
+		.row
+			.col-sm-12
+
+				a.header__logo(href='index.html')
+					img(src='../assets/images/logo.png', alt='logo')
+				.header__list
+					ul.list-inline.text-right
+						li
+							a(href="about.html") Apie mus  
+						li 
+							a(href="services.html") Paslaugos
+						li
+							a(href="#") Informacija pacientams 
+						li 
+							a(href="science.html") Mokslas
+						li
+							a(href="team.html") Komanda 
+						li 
+							a(href="contacts.html") Kontaktai
+						li
+
+
+							.dropdown
+								button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+									| LT
+									span.caret
+
+								ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+									li
+										a(href='#') ENG
+									li
+										a(href='#') SE

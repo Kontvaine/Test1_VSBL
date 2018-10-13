@@ -19,20 +19,20 @@ mixin services(link, title, intro)
 
 mixin project(projectTitle, logoSrc, projectIntro)
 	.col-md-6
-		.col-md-12.project__box
+		.project__box
 			.name-logo.flex
-				h2.h2--projects #{projectTitle}
+				h3.h3--projects #{projectTitle}
 				img(src='#{logoSrc}', alt='logo project')
 			p.p--resized #{projectIntro}
 			a.a--btn-project(href="#") peržiūrėti projektą	
 
-mixin project2(projectTitle, projectIntro)
+mixin projectIntro(projectTitle, projectIntro)
 	.col-md-6
-		.col-md-12.project__box
+		.project__box
 			.name-logo.flex
-				h2.h2--projects #{projectTitle}
+				h3.h3--projects #{projectTitle}
 				img(src='../assets/images/kitas_logo.png', alt='logo project')
-			p.p--resized #{projectIntro}
+			p.p--smaller #{projectIntro}
 			a.a--btn-project(href="#") peržiūrėti projektą
 			
 			
@@ -41,7 +41,7 @@ mixin publication(publicationNumber, authorsAndTitle )
 		.col-md-12
 			.publications__box.flex
 				.number #{publicationNumber}
-				p.p--resized #{authorsAndTitle}
+				p.p--smaller #{authorsAndTitle}
 				
 mixin member(fullname, position, aboutMember)
 	.col-md-6
@@ -53,7 +53,7 @@ mixin member(fullname, position, aboutMember)
 					.team__member__name
 						h4.h4--state-bold #{fullname}
 						h4 #{position}
-				p.p--resized #{aboutMember}		
+				p.p--smaller #{aboutMember}		
 						
 				
 

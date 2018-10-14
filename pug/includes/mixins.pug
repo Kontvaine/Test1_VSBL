@@ -46,14 +46,13 @@ mixin publication(publicationNumber, authorsAndTitle )
 mixin member(fullname, position, aboutMember)
 	.col-md-6
 		.team__member
-			.col-md-12
-				.member__box__content.flex
-					.team__member__photo
-						img(src='../assets/images/doctor.jpg', alt='member')
-					.team__member__name
-						h4.h4--state-bold #{fullname}
-						h4 #{position}
-				p.p--smaller #{aboutMember}		
+			.member__box__content.flex
+				.team__member__photo
+					img(src='../assets/images/doctor.jpg', alt='member')
+				.team__member__name
+					h4.h4--state-bold #{fullname}
+					h4 #{position}
+			p.p--smaller #{aboutMember}		
 						
 				
 
